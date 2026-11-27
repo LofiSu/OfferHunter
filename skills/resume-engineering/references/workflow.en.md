@@ -27,3 +27,23 @@ Fictional notes — A support team piloted a knowledge assistant. The candidate 
 
 - **AI evaluation · Offline regression** — Curated 60 evaluation questions from historical support tickets, classified failures by citation errors, incomplete answers, and cases requiring refusal, and retested two assistant versions.
 - **AI product · Workflow validation** — Interviewed five support agents and defined citation confirmation as an acceptance criterion for the assistant workflow. The team completed an internal pilot.
+
+## Real project example · EC-Monica, an e-commerce operations agent
+
+### STAR notes
+
+- **Situation** — E-commerce product, operations, and engineering teams needed to analyze business data, draft reports, interpret requirements, and investigate changes in business metrics.
+- **Task** — Own the project from initial design through launch and build an agent for those workflows.
+- **Action** — Route requests by intent to tool execution or direct generation. Select tools from a registry, calculate year-over-year and period-over-period changes, and inject the results into context. Generate intermediate findings and synthesize them into a report. Handle tool timeouts and errors with retries and a fallback path. Use sample reports and operations templates as few-shot examples, and manage multi-turn context with summaries and a sliding window.
+- **Result** — Shipped to product, operations, and engineering teams with support for analysis reports, requirements interpretation, and business attribution. Include measurement scope and comparison conditions when reporting quantitative outcomes.
+
+### Resume-ready entry
+
+**EC-Monica · E-commerce Operations Agent | Project Owner**
+
+- **Context and goal** — Designed and launched an agent for e-commerce product, operations, and engineering teams, covering data analysis, report generation, requirements interpretation, and business attribution.
+- **Agent workflow** — Implemented intent routing and registry-based tool selection. Injected year-over-year and period-over-period calculations into context, generated intermediate findings, and synthesized them into reports. Added retry, error classification, and fallback handling for tool calls.
+- **Context engineering** — Added business reports and operations templates as few-shot examples. Used summaries and a sliding window to carry forward observations and findings during multi-step analysis.
+- **Launch** — Delivered report generation, requirements interpretation, and attribution workflows to product, operations, and engineering users.
+
+For AI application engineering, lead with routing, failure handling, and context management. For AI product roles, lead with users, the workflows delivered, and verified usage evidence.

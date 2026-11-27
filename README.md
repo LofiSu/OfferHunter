@@ -41,6 +41,8 @@ cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
 
 Skill 默认输出可复制的简历文本。项目级结果与个人职责各自注明主语，缺失的信息放在成稿之外。使用时只需提供你愿意交给客户端处理的素材。
 
+查看 [EC-Monica 电商产运 Agent 的完整 STAR 改写](skills/resume-engineering/references/examples.md)。
+
 ## 许可
 
 [MIT](LICENSE)

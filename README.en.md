@@ -39,6 +39,8 @@ Use OfferHunter for research, training, applications, infrastructure, data, eval
 
 See how an AI thumbnail generator project becomes a copy-ready resume entry. [English STAR workflow and examples](skills/resume-engineering/references/workflow.en.md)
 
+See the [EC-Monica e-commerce operations agent case study](skills/resume-engineering/references/workflow.en.md) for a full STAR breakdown and resume-ready entry.
+
 ## License
 
 [MIT](LICENSE)
