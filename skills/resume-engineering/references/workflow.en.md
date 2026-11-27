@@ -1,5 +1,7 @@
 # STAR workflow for AI resumes
 
+Apply STAR to every project, including work, internships, open-source contributions, and independent projects. The final resume can combine the four elements into short bullets.
+
 1. Extract **Situation** (users, problem, constraints), **Task** (goal and personal ownership), **Action** (decisions, mechanisms, and tradeoffs), and **Result** (verified outcome, scope, and attribution). Use the supplied material as the source of truth. If the user supplies only a job description, ask up to three focused questions to gather relevant STAR material.
 2. Choose and order projects by the work the target role actually does. Research and training may emphasize baselines and ablations. Application and platform roles may emphasize workflows, reliability, latency, or cost. Data, safety, and evaluation may emphasize dataset coverage, scoring criteria, and verified findings. Product, design, governance, and customer-facing roles may emphasize user research, acceptance criteria, adoption, or completed remediation.
 3. Draft **Context and goal**, then **My contributions**. Start each contribution with a short heading and describe one decision or delivery. Explain the mechanism or workflow when it clarifies the contribution. Use ownership verbs that reflect the candidate's actual responsibility. For a short resume, combine context, action, and result in a single bullet.
@@ -23,6 +25,13 @@ The source describes shipped capabilities and provides no measured change in cli
 
 ## Real project example · EC-Monica, an e-commerce operations agent
 
+### STAR notes
+
+- **Situation** — E-commerce product, operations, and engineering teams needed to interpret experiments and dashboards, write reports, investigate metric changes, and analyze requirements.
+- **Task** — Own EC-Monica from initial design through launch.
+- **Action** — Route requests by intent, register tools through configuration, calculate year-over-year and period-over-period metrics in Python, and synthesize intermediate findings into reports. Add tool failure handling and use examples, summaries, and a sliding window to guide multi-turn analysis.
+- **Result** — The resume records 600+ calls per month on average. About 55% were reporting tasks and 45% were requirements or attribution tasks. A single report took 1–2 hours to write manually and 5–15 minutes to generate with the agent. The source does not specify the observation period or sample size.
+
 ### Resume-ready entry
 
 **EC-Monica · E-commerce Operations Agent**
@@ -33,10 +42,3 @@ The source describes shipped capabilities and provides no measured change in cli
   - **Agentic workflow** — Routed requests by intent to tool calls or direct generation. Executed tools iteratively, produced intermediate findings, and synthesized reports. Added timeouts, retries, error classification, and a direct-generation fallback.
   - **Tool registry** — Registered function schemas through configuration across user behavior, GMV, acquisition channels, and product analysis. Added analysis tools by extending the configuration.
   - **Context engineering** — Calculated year-over-year and period-over-period metrics in Python, added report examples and operations templates, and carried forward key findings with summaries and a sliding window.
-
-### STAR notes
-
-- **Situation** — E-commerce product, operations, and engineering teams needed to interpret experiments and dashboards, write reports, investigate metric changes, and analyze requirements.
-- **Task** — Own EC-Monica from initial design through launch.
-- **Action** — Route requests by intent, register tools through configuration, calculate year-over-year and period-over-period metrics in Python, and synthesize intermediate findings into reports. Add tool failure handling and use examples, summaries, and a sliding window to guide multi-turn analysis.
-- **Result** — The resume records 600+ calls per month on average. About 55% were reporting tasks and 45% were requirements or attribution tasks. A single report took 1–2 hours to write manually and 5–15 minutes to generate with the agent. The source does not specify the observation period or sample size.

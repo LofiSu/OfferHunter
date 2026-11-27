@@ -1,14 +1,14 @@
-# OfferHunter · AI 岗位简历写作与 STAR 改写
+# OfferHunter｜用 STAR 法则写 AI 求职简历
 
 简体中文 | [English](README.en.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**OfferHunter 是一款面向 AI 求职的开源简历写作 Agent Skill。** 用 Codex 把项目笔记、旧简历和岗位 JD 写成可投递的一页简历。可以从零写整份简历、重组工作与实习经历，也可以只改一条 STAR 项目要点。支持中文、英文和双语稿，附黑白单栏 HTML 与 LaTeX 简历模板。
+OfferHunter 是一个开源的 Codex 简历技能，适合准备投递 AI 岗位的人。把旧简历、项目笔记和目标岗位的 JD 交给它，就可以从头写一份简历、调整栏目顺序，或重写某段经历。支持中文、英文和双语简历。
 
-- **按目标岗位选素材**。适用于 LLM 与 Agent 应用工程、机器学习研究与工程、模型评测、AI 产品、数据、MLOps、推理平台和解决方案等方向。[100 条 BOSS 直聘岗位索引](skills/resume-engineering/references/ai-roles.md)
-- **用真实项目学习怎么写**。EC-Monica 电商 Agent 案例展示如何按「背景 → 指标与效果 → 我的职责」写清项目范围、技术链路和上线结果。[中文 STAR 案例](skills/resume-engineering/references/examples.md)
-- **让整份稿子更好扫读**。调整栏目顺序，压缩低相关内容，保留能说明个人职责和交付的证据。[简历结构指南](skills/resume-engineering/references/resume-structure.md)
+- **怎么写项目**：以 EC-Monica 电商 Agent 为例，展示如何交代业务背景、上线效果和本人负责的工作。[项目示例](skills/resume-engineering/references/examples.md)
+- **不同岗位怎么选经历**：用 100 条 BOSS 直聘岗位样本，了解应用开发、模型训练、评测、AI 产品等岗位分别关注什么。[岗位参考](skills/resume-engineering/references/ai-roles.md)
+- **整份简历怎么排**：从页首的联系方式和教育信息，到工作、实习和独立项目，附黑白单栏 HTML 和 LaTeX 模板。[简历结构](skills/resume-engineering/references/resume-structure.md)
 
 [快速开始](#快速开始) · [STAR 写法](#用-star-写项目经历) · [HTML 模板](#html-简历模板) · [常见问题](#常见问题)
 
@@ -30,14 +30,14 @@ cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
 
 ## 用 STAR 写项目经历
 
-- **S · 情境**：服务对象是谁，遇到了什么问题，有哪些约束。
-- **T · 任务**：项目要达到什么目标，自己负责哪部分。
-- **A · 行动**：用短标题拆开关键模块，写清自己做过的事、方案如何运转，以及有依据的取舍。
-- **R · 结果**：把可验证的成效放在对应动作后，或在项目总览中注明团队成效。缺少数字时，可以写已交付的能力、采纳情况或验证发现。
+简历里的每个项目都先拆成四部分，再写成正文。
 
-成稿沿用「背景与目标」「我的职责」的结构，结果可以放在对应职责之后。一页简历可把这几部分压进一条要点。
+- **S · 情境**：谁遇到了什么问题？
+- **T · 任务**：项目要解决什么问题？你负责哪一部分？
+- **A · 行动**：你具体做了什么？关键方案是怎么实现的？
+- **R · 结果**：最后交付了什么？有哪些上线数据、使用反馈或验证结果？
 
-适用于 AI 研究、模型训练、应用、基础设施、数据、评测、安全、产品、设计、治理和商业落地等方向。用目标岗位的实际工作挑选经历，同一段经历可按不同岗位突出不同动作。[AI 岗位取材参考](skills/resume-engineering/references/ai-roles.md) · [改写示例](skills/resume-engineering/references/examples.md)
+正文可以沿用「背景与目标 → 指标与效果 → 我的职责」，也可以把四个要素压进一两条简历要点。没有量化指标时，用实际交付、采纳情况或已完成的验证来写结果。有待确认的事实放在稿外。
 
 ## 可以这样用
 
@@ -45,7 +45,7 @@ cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
 - 「把这份项目复盘写成可投递的一页简历。上线效果是团队数据，我个人负责的是流程编排。」
 - 「审一遍这份简历。找出说不清归因的数字，给我可以直接替换的写法。」
 
-Skill 默认输出可复制的简历文本。项目级结果与个人职责各自注明主语，缺失的信息放在成稿之外。使用时只需提供你愿意交给客户端处理的素材。
+默认给出可直接复制的简历正文。团队成果注明归属，个人职责写清自己具体做了什么。
 
 查看 [EC-Monica 电商产运 Agent 的完整 STAR 改写](skills/resume-engineering/references/examples.md)。
 
@@ -53,7 +53,7 @@ Skill 默认输出可复制的简历文本。项目级结果与个人职责各�
 
 可以从旧简历或项目笔记起草整份简历，也可以调整栏目顺序、压缩正文或只改一段经历。默认沿用「页首 → 工作经历 → 实习经历 → AI 创业／独立项目」的结构，按需呈现教育、开源和奖项。LaTeX 版采用简洁的黑白单栏排版。
 
-[Resume structure](skills/resume-engineering/references/resume-structure.md) · [LaTeX template](skills/resume-engineering/templates/resume.tex)
+[简历结构](skills/resume-engineering/references/resume-structure.md) · [LaTeX 模板](skills/resume-engineering/templates/resume.tex)
 
 ## HTML 简历模板
 
@@ -100,7 +100,7 @@ Skill 默认输出可复制的简历文本。项目级结果与个人职责各�
     <p><a href="mailto:hello@example.com">hello@example.com</a> ·
        <a href="https://example.com">作品集</a></p>
     <p>学校 · 专业 · 毕业年份</p>
-    <p>代表性开源贡献或奖项</p>
+    <p>开源贡献或代表奖项（可选）</p>
   </header>
   <main>
     <section>
@@ -109,22 +109,40 @@ Skill 默认输出可复制的简历文本。项目级结果与个人职责各�
         <h3>公司 · 岗位</h3>
         <span><time datetime="2025-01">2025.01</time>–<time datetime="2025-12">2025.12</time></span>
       </div>
-      <p><strong>项目名称 · 项目角色</strong></p>
+      <p><strong>项目名称 · 角色</strong></p>
       <ul>
-        <li><strong>背景</strong> — 服务对象、业务问题和项目目标。</li>
-        <li><strong>指标与效果</strong> — 写可核对的交付、采纳情况或量化结果。</li>
-        <li><strong>我的职责</strong> — 写清本人完成的关键动作、实现方式和交付。</li>
+        <li><strong>背景与目标</strong> — 为【用户】解决【问题】，负责【交付目标】。</li>
+        <li><strong>指标与效果</strong> — 上线后【可核对的使用或业务结果】。</li>
+        <li><strong>我的职责</strong>
+          <ul><li><strong>【模块名】</strong> — 实现【关键流程】，通过【具体做法】解决【约束】。</li></ul>
+        </li>
       </ul>
     </section>
     <section>
       <h2>实习经历</h2>
-      <h3>公司 · 岗位</h3>
-      <ul><li>写一条与目标岗位相关的个人贡献。</li></ul>
+      <div class="entry-heading">
+        <h3>公司 · 岗位</h3>
+        <span><time datetime="2025-01">2025.01</time>–<time datetime="2025-12">2025.12</time></span>
+      </div>
+      <p><strong>项目名称 · 角色</strong></p>
+      <ul>
+        <li><strong>背景与目标</strong> — 团队需要【目标】，我负责【具体模块】。</li>
+        <li><strong>指标与效果</strong> — 模块已【上线、验收或验证结果】。</li>
+        <li><strong>我的职责</strong>
+          <ul><li><strong>【模块名】</strong> — 完成【关键动作】并交付【功能】。</li></ul>
+        </li>
+      </ul>
     </section>
     <section>
       <h2>AI 创业／独立项目</h2>
-      <h3>项目名称 · 项目角色</h3>
-      <ul><li>写明个人角色、已交付的功能和实际效果。</li></ul>
+      <h3>项目名称 · 角色</h3>
+      <ul>
+        <li><strong>背景与目标</strong> — 面向【用户场景】，负责【产品或功能目标】。</li>
+        <li><strong>指标与效果</strong> — 已交付【功能】，在【范围】完成验证。</li>
+        <li><strong>我的职责</strong>
+          <ul><li><strong>【核心功能】</strong> — 用【具体方法】实现【用户流程】。</li></ul>
+        </li>
+      </ul>
     </section>
   </main>
 </body>

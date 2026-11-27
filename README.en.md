@@ -109,20 +109,38 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
       </div>
       <p><strong>Project · Your role</strong></p>
       <ul>
-        <li><strong>Context</strong> — Who the project served, the problem, and the goal.</li>
-        <li><strong>Impact</strong> — State the verified delivery, adoption, or measurable outcome.</li>
-        <li><strong>Contributions</strong> — Describe what you owned, how you did it, and what you delivered.</li>
+        <li><strong>Context and goal</strong> — Addressed [problem] for [users] and owned [deliverable].</li>
+        <li><strong>Impact</strong> — After launch, [verified usage or business outcome].</li>
+        <li><strong>My contributions</strong>
+          <ul><li><strong>[Module]</strong> — Implemented [workflow] using [method] to address [constraint].</li></ul>
+        </li>
       </ul>
     </section>
     <section>
       <h2>Internships</h2>
-      <h3>Company · Role</h3>
-      <ul><li>Describe one contribution relevant to the target role.</li></ul>
+      <div class="entry-heading">
+        <h3>Company · Role</h3>
+        <span><time datetime="2025-01">2025.01</time>–<time datetime="2025-12">2025.12</time></span>
+      </div>
+      <p><strong>Project · Your role</strong></p>
+      <ul>
+        <li><strong>Context and goal</strong> — The team needed [goal]. I owned [module].</li>
+        <li><strong>Impact</strong> — The module [shipped, passed acceptance, or produced a finding].</li>
+        <li><strong>My contributions</strong>
+          <ul><li><strong>[Module]</strong> — Completed [action] and delivered [feature].</li></ul>
+        </li>
+      </ul>
     </section>
     <section>
       <h2>Independent AI Projects</h2>
       <h3>Project · Your role</h3>
-      <ul><li>State your role, what shipped, and the result.</li></ul>
+      <ul>
+        <li><strong>Context and goal</strong> — Built [product capability] for [users and scenario].</li>
+        <li><strong>Impact</strong> — Delivered [feature] and validated it in [scope].</li>
+        <li><strong>My contributions</strong>
+          <ul><li><strong>[Core feature]</strong> — Implemented [user flow] using [approach].</li></ul>
+        </li>
+      </ul>
     </section>
   </main>
 </body>
