@@ -1,5 +1,7 @@
 # OfferHunter
 
+
+[English](README.en.md)
 OfferHunter 是一套面向 AI 相关岗位的简历写作 Agent Skill。写法来自 LofiSu 的简历迭代：先交代为什么做，再讲自己具体负责什么、研究、工程或业务链路如何推进，最后把有证据的结果写清楚。
 
 ## 用 STAR 写项目经历
