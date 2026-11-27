@@ -60,7 +60,7 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Single-column resume preview with work experience, internships, and independent AI projects](assets/resume-preview-en.png)
+![Single-column resume preview with work experience, internships, and independent AI projects](assets/resume-preview-star-en.png)
 
 Copy the code into `resume.html`, open it in a browser, and use the print menu to export an A4 PDF.
 

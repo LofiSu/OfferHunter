@@ -62,7 +62,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## HTML 简历模板
 
-![中文简历模板预览，黑白单栏，包含工作经历、实习经历与 AI 项目](assets/resume-preview-zh.png)
+![中文简历模板预览，黑白单栏，包含工作经历、实习经历与 AI 项目](assets/resume-preview-star-zh.png)
 
 复制下面的代码，保存为 `resume.html`，在浏览器中打开。填写后可用浏览器的打印功能导出 A4 PDF。
 
