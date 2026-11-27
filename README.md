@@ -66,9 +66,11 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 [简历结构](skills/resume-engineering/references/resume-structure.md) · [LaTeX 模板](skills/resume-engineering/templates/resume.tex)
 
+在页首加一句自我介绍，把工作或实习经历、可点击的代表作和现在想做的方向写在一起。[中英文示例](skills/resume-engineering/references/resume-structure.md#一句话自我介绍)
+
 ## HTML 简历模板
 
-![通用中文简历模板，包含求职方向、实习经历和项目经历](assets/resume-preview-portfolio-zh.png)
+![通用中文简历模板，包含求职方向、实习经历和项目经历](assets/resume-preview-intro-zh.png)
 
 示例从实习经历开始。有正式工作经历时，可复制公司和项目的结构，在实习前加上「工作经历」。
 
@@ -95,6 +97,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
     h1 { font-size: 21pt; line-height: 1.15; margin: 0 0 .15em; }
     header p { margin: .12em 0; }
     a { color: inherit; overflow-wrap: anywhere; }
+    .intro { margin: .28em 0; }
     .profile, .open-source { font-weight: 700; }
     .section-title {
       color: #174add; border-bottom: 1.5px solid #315eed;
@@ -125,6 +128,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
     <p>手机号 ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
     <p class="profile">求职方向</p>
     <p class="open-source"><a href="https://github.com/username">GitHub</a> ｜ <a href="https://example.com/portfolio">作品链接</a></p>
+    <p class="intro">曾在某团队负责某项工作，代表作是 <a href="https://example.com/work">作品名称</a>，目前希望深入某个方向。</p>
     <p>学校专业</p>
   </header>
   <main>

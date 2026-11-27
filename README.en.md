@@ -64,9 +64,11 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 [Resume structure](skills/resume-engineering/references/resume-structure.md) · [LaTeX template](skills/resume-engineering/templates/resume.tex)
 
+Use one sentence in the header to introduce your work or internship experience, a linked work sample, and what you want to do next. [Bilingual examples](skills/resume-engineering/references/resume-structure.md#一句话自我介绍)
+
 ## HTML Resume Template
 
-![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-portfolio-en.png)
+![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-intro-en.png)
 
 This example starts with internships. If you have full-time experience, reuse the employer and project markup to add a Work Experience section above it.
 
@@ -93,6 +95,7 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
     h1 { font-size: 21pt; line-height: 1.15; margin: 0 0 .15em; }
     header p { margin: .12em 0; }
     a { color: inherit; overflow-wrap: anywhere; }
+    .intro { margin: .28em 0; }
     .profile, .open-source { font-weight: 700; }
     .section-title {
       color: #174add; border-bottom: 1.5px solid #315eed;
@@ -123,6 +126,7 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
     <p>Phone number ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
     <p class="profile">Target role</p>
     <p class="open-source"><a href="https://github.com/username">GitHub</a> ｜ <a href="https://example.com/portfolio">Portfolio</a></p>
+    <p class="intro">I worked on a project at my previous team, built <a href="https://example.com/work">a representative project</a>, and now want to explore a new area.</p>
     <p>School and major</p>
   </header>
   <main>
