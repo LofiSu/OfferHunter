@@ -60,7 +60,7 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-background-en.png)
+![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-portfolio-en.png)
 
 This example starts with internships. If you have full-time experience, reuse the employer and project markup to add a Work Experience section above it.
 
@@ -116,7 +116,7 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
     <h1>Your Name</h1>
     <p>Phone number ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
     <p class="profile">Target role</p>
-    <p class="open-source"><a href="https://github.com/username">github.com/username</a> ｜ Project name · Community role or selected contribution</p>
+    <p class="open-source"><a href="https://github.com/username">GitHub</a> ｜ <a href="https://example.com/portfolio">Portfolio</a></p>
     <p>School and major</p>
   </header>
   <main>

@@ -62,7 +62,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## HTML 简历模板
 
-![通用中文简历模板，包含求职方向、实习经历和项目经历](assets/resume-preview-background-zh.png)
+![通用中文简历模板，包含求职方向、实习经历和项目经历](assets/resume-preview-portfolio-zh.png)
 
 示例从实习经历开始。有正式工作经历时，可复制公司和项目的结构，在实习前加上「工作经历」。
 
@@ -118,7 +118,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
     <h1>候选人姓名</h1>
     <p>手机号 ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
     <p class="profile">求职方向</p>
-    <p class="open-source"><a href="https://github.com/username">github.com/username</a> ｜ 项目名 · 社区角色或代表性贡献</p>
+    <p class="open-source"><a href="https://github.com/username">GitHub</a> ｜ <a href="https://example.com/portfolio">作品链接</a></p>
     <p>学校专业</p>
   </header>
   <main>
