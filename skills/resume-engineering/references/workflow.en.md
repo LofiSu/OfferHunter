@@ -8,7 +8,7 @@ Apply STAR to every project, including work, internships, open-source contributi
 4. Keep metrics tied to the known baseline, unit, measurement window, and environment. Distinguish offline evaluation, pilot outcomes, and production results. Attribute team results explicitly. Use qualitative evidence when a number is unavailable, and use causal wording only when the evidence supports it.
 5. Deliver the copy-ready text first. Keep unresolved facts outside the resume and mention up to three only when they affect the wording. Remove confidential details from public-facing drafts.
 
-## Example adapted from a real project
+## AI Thumbnail Generator
 
 - **Situation** — Creators publishing across multiple platforms needed thumbnails in different sizes.
 - **Task** — Build a tool that takes creator assets and a platform choice through to preview and download.
@@ -23,7 +23,7 @@ Apply STAR to every project, including work, internships, open-source contributi
 
 The source describes shipped capabilities and provides no measured change in click-through rate.
 
-## Real project example · EC-Monica, an e-commerce operations agent
+## EC-Monica · E-commerce Operations Agent
 
 ### STAR notes
 
