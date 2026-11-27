@@ -29,6 +29,14 @@
 
 > I designed and launched an analytics agent during an e-commerce internship and built [Thumbnail AI](https://www.thumbnail-ai.com/), and I now want to work on agent evaluation because shipping an agent made me want to understand where users can rely on it.
 
+## 作品链接与背调联系人
+
+作品链接跟在项目名或对应贡献后。代表作还可以放在页首。优先链接到招聘方可以直接打开的演示、代码仓库、公开 PR 或发布记录。
+
+工作和实习经历写清公司、岗位和起止时间。需要背调时，可以在征得前主管或其他证明人同意后，单独把姓名、职务、共事关系和工作邮箱或公司电话发给招聘方。
+
+**English:** Link each work sample to a public demo, repository, pull request, or release. For employment references, share a former manager’s or other referee’s name, title, working relationship, and work email or phone privately with the recruiter, with the referee’s consent.
+
 ## 排版与交付
 
 参考学术论文的单栏和清晰标题层级。正文以黑色为主，统一日期格式，给栏目之间留出空白。LaTeX 模板用黑白，HTML 模板用蓝色区分栏目和项目标题。姓名和栏目名足够醒目。直接使用可复制的文本和链接，省去照片、图标、技能进度条、彩色背景、侧栏和论文式双栏。默认优先用一页呈现高相关经历，材料较多时可用两页保持可读字号。

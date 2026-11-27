@@ -68,6 +68,8 @@ Identify the one thing you want a recruiter to remember, then support it with a 
 
 Use one sentence in the header to introduce your work or internship experience, a linked work sample, and what you want to do next. [Bilingual examples](skills/resume-engineering/references/resume-structure.md#一句话自我介绍)
 
+**Make your work verifiable.** Link to public demos or source code. If a recruiter needs a reference, share a consenting former manager’s work email or company phone privately.
+
 ## HTML Resume Template
 
 ![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-highlight-en.png)

@@ -70,6 +70,8 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 在页首加一句自我介绍，把工作或实习经历、可点击的代表作和现在想做的方向写在一起。[中英文示例](skills/resume-engineering/references/resume-structure.md#一句话自我介绍)
 
+**作品和经历怎么核验**：作品优先附可公开打开的演示或代码链接。需要背调时，经对方同意，可私下向招聘方提供前主管的工作邮箱或公司电话。
+
 ## HTML 简历模板
 
 ![通用中文简历模板，包含求职方向、实习经历和项目经历](assets/resume-preview-highlight-zh.png)
