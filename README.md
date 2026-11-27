@@ -1,8 +1,26 @@
 # OfferHunter
 
+简体中文 | [English](README.en.md)
 
-[English](README.en.md)
-OfferHunter 是一套面向 AI 相关岗位的简历写作 Agent Skill。写法来自 LofiSu 的简历迭代：先交代为什么做，再讲自己具体负责什么、研究、工程或业务链路如何推进，最后把有证据的结果写清楚。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+OfferHunter 是一款开源 Agent Skill，用 STAR 将真实项目经历写成可投递的 AI 岗位简历。支持中文、英文和双语输出。
+
+## 一句话安装
+
+```text
+请克隆 https://github.com/LofiSu/OfferHunter，并把 skills/resume-engineering 安装到当前 Codex 项目的 .agents/skills/。
+```
+
+## 快速开始
+
+```sh
+git clone https://github.com/LofiSu/OfferHunter.git /path/to/OfferHunter
+mkdir -p .agents/skills
+cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
+```
+
+在该项目中调用 `$resume-engineering`，附上旧简历或项目笔记。有目标 JD 时一并提供。
 
 ## 用 STAR 写项目经历
 
@@ -14,17 +32,6 @@ OfferHunter 是一套面向 AI 相关岗位的简历写作 Agent Skill。写法�
 成稿沿用「背景与目标」「我的职责」的结构，结果可以放在对应职责之后。一页简历可把这几部分压进一条要点。
 
 适用于 AI 研究、模型训练、应用、基础设施、数据、评测、安全、产品、设计、治理和商业落地等方向。用目标岗位的实际工作挑选经历，同一段经历可按不同岗位突出不同动作。[AI 岗位取材参考](skills/resume-engineering/references/ai-roles.md) · [改写示例](skills/resume-engineering/references/examples.md)
-
-## 使用
-
-把 [resume-engineering](skills/resume-engineering/) 整个目录放进支持 Agent Skills 的客户端的技能目录。以 Codex 项目级安装为例，先将 OfferHunter 克隆到任意位置，再在你希望调用 Skill 的项目根目录运行安装命令。
-
-```sh
-mkdir -p .agents/skills
-cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
-```
-
-在该项目中调用 `$resume-engineering`，附上旧简历、目标岗位或项目笔记。也可以在对话里直接提供 [SKILL.md](skills/resume-engineering/SKILL.md) 及其引用文件的内容。
 
 ## 可以这样用
 
