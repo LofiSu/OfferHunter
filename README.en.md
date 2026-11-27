@@ -60,7 +60,7 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Single-column resume preview with a target role, internships, and four-line STAR project entries](assets/resume-preview-pdf-layout-en.png)
+![Single-column resume preview with a target role, internships, and four-line STAR project entries](assets/resume-preview-responsibilities-en.png)
 
 This example starts with internships. If you have full-time experience, reuse the employer and project markup to add a Work Experience section above it.
 
@@ -100,6 +100,8 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
     .star { margin: 0; padding-inline-start: 1.25em; }
     .star > li { margin: .16em 0; }
     .star ul { list-style: circle; margin: .1em 0 0; padding-inline-start: 1.25em; }
+    .responsibility { margin: .2em 0 .18em; }
+    .responsibility strong { color: #193677; }
     .star-action li { margin: .12em 0; }
     @media print {
       body { max-width: none; margin: 0; padding: 0; }
@@ -125,7 +127,9 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
         <h4 class="project-title">EC-Monica · E-commerce Operations Agent</h4>
         <ul class="star">
           <li><strong>Situation</strong> · E-commerce teams needed to query data, investigate metric changes, and write reports.</li>
-          <li><strong>Task</strong> · Build an e-commerce operations agent. <strong>My role</strong> · Project owner responsible for design, tool orchestration, and launch.</li>
+          <li><strong>Task</strong> · Build an e-commerce operations agent.
+            <div class="responsibility"><strong>My responsibilities</strong> · Project owner responsible for design, tool orchestration, and launch.</div>
+          </li>
           <li class="star-action"><strong>Action</strong>
             <ul>
               <li><strong>Agent workflow</strong> · Implemented intent routing and tool execution with retries and fallback.</li>
@@ -143,7 +147,9 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
         <h4 class="project-title">AI Thumbnail Generator</h4>
         <ul class="star">
           <li><strong>Situation</strong> · Creators needed thumbnails in different sizes for different platforms.</li>
-          <li><strong>Task</strong> · Let creators select a platform and generate a thumbnail from their assets. <strong>My role</strong> · Owned asset inputs, the generation workflow, and subscriptions.</li>
+          <li><strong>Task</strong> · Let creators select a platform and generate a thumbnail from their assets.
+            <div class="responsibility"><strong>My responsibilities</strong> · Owned asset inputs, the generation workflow, and subscriptions.</div>
+          </li>
           <li class="star-action"><strong>Action</strong>
             <ul>
               <li><strong>Thumbnail generation</strong> · Built platform presets and asset inputs in Next.js, then called the image generation API with platform and style prompts.</li>

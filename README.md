@@ -62,7 +62,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## HTML 简历模板
 
-![中文简历模板预览，包含求职方向、实习经历和按 STAR 撰写的 AI 项目](assets/resume-preview-pdf-layout-zh.png)
+![中文简历模板预览，包含求职方向、实习经历和按 STAR 撰写的 AI 项目](assets/resume-preview-responsibilities-zh.png)
 
 示例从实习经历开始。有正式工作经历时，可复制公司和项目的结构，在实习前加上「工作经历」。
 
@@ -102,6 +102,8 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
     .star { margin: 0; padding-inline-start: 1.25em; }
     .star > li { margin: .16em 0; }
     .star ul { list-style: circle; margin: .1em 0 0; padding-inline-start: 1.25em; }
+    .responsibility { margin: .2em 0 .18em; }
+    .responsibility strong { color: #193677; }
     .star-action li { margin: .12em 0; }
     @media print {
       body { max-width: none; margin: 0; padding: 0; }
@@ -127,7 +129,9 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
         <h4 class="project-title">EC-Monica 电商产运 Agent</h4>
         <ul class="star">
           <li><strong>情境</strong> · 电商团队需要查数、分析指标波动并撰写报告。</li>
-          <li><strong>任务</strong> · 搭建电商产运 Agent。<strong>我的职责</strong> · 担任项目负责人，负责方案设计、工具编排和上线交付。</li>
+          <li><strong>任务</strong> · 搭建电商产运 Agent。
+            <div class="responsibility"><strong>我的职责</strong> · 担任项目负责人，负责方案设计、工具编排和上线交付。</div>
+          </li>
           <li class="star-action"><strong>行动</strong>
             <ul>
               <li><strong>Agent 工作流</strong> · 实现意图识别和工具路由，失败时支持超时重试和降级。</li>
@@ -145,7 +149,9 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
         <h4 class="project-title">AI 封面图生成工具</h4>
         <ul class="star">
           <li><strong>情境</strong> · 多平台创作者需要符合各平台尺寸的封面。</li>
-          <li><strong>任务</strong> · 让创作者选平台、上传素材后即可生成封面。<strong>我的职责</strong> · 负责素材输入、封面生成流程和订阅功能。</li>
+          <li><strong>任务</strong> · 让创作者选平台、上传素材后即可生成封面。
+            <div class="responsibility"><strong>我的职责</strong> · 负责素材输入、封面生成流程和订阅功能。</div>
+          </li>
           <li class="star-action"><strong>行动</strong>
             <ul>
               <li><strong>封面生成</strong> · 用 Next.js 实现平台尺寸预设、主体上传和风格参考图输入，按平台和风格组织提示词并调用图像生成 API。</li>
