@@ -4,13 +4,15 @@ English | [简体中文](README.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**OfferHunter is an open-source AI resume writer and editing skill for Claude, ChatGPT, Codex, Grok, and other AI assistants.** Turn project notes, an existing resume or CV, and a target job description into a focused application. Draft a full resume, reorganize work and internship sections, or rewrite individual bullets using STAR. Write in English, Chinese, or both, with minimalist HTML and LaTeX templates.
+**Turn real project work into an AI resume you can explain in an interview.**
 
-- **Tailor the resume to the role.** Use it for LLM and AI agent engineering, machine learning research, model evaluation, AI product management, data, MLOps, inference infrastructure, and solutions engineering. [100 BOSS Zhipin job samples](skills/resume-engineering/references/ai-roles.md)
-- **Learn from a real project.** The EC-Monica e-commerce agent example pairs business context and measurable impact with specific engineering contributions. [English STAR case study](skills/resume-engineering/references/workflow.en.md)
-- **Edit the whole document.** Reorder sections, shorten low-relevance entries, and foreground evidence of ownership and delivery. [Full resume structure](skills/resume-engineering/references/resume-structure.md)
+OfferHunter is an open-source writing skill for Claude, ChatGPT, Codex, Grok, and other AI assistants. Give it your project notes or existing resume to draft a full application, reorganize sections, or tailor a project entry to a job description. It supports English, Chinese, and bilingual drafts.
 
-[Quick start](#quick-start) · [STAR method](#write-with-star) · [HTML template](#html-resume-template) · [FAQ](#faq)
+- [Read a worked example](skills/resume-engineering/references/workflow.en.md#ec-monica--e-commerce-operations-agent). See how the EC-Monica entry describes ownership, implementation, and usage.
+- [Find relevant experience](skills/resume-engineering/references/ai-roles.md). Browse 100 BOSS Zhipin job samples and role-specific prompts for choosing evidence.
+- [Preview the template](#html-resume-template). Put GitHub and a public work sample together in the header. Choose copyable HTML or a single-column LaTeX template.
+
+[Quick start](#quick-start) · [STAR method](#write-with-star) · [FAQ](#faq)
 
 ## Quick Start
 

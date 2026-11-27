@@ -11,13 +11,13 @@ Apply STAR to every project, including work, internships, open-source contributi
 ## EC-Monica · E-commerce Operations Agent
 
 - **Background** — E-commerce product, operations, and engineering teams needed to query business data, investigate metric changes, and prepare reports.
-- **My responsibilities** — project owner from design through launch.
-- **Action** — Built intent routing and tool execution for data queries, year-over-year and period-over-period calculations, and iterative report synthesis. Added retry and fallback handling, report examples, and context summaries.
+- **My responsibilities** — Owned the project from design through launch, including tool orchestration and model context.
+- **Action** — Routed each request to direct generation or a tool. For data queries, calculated year-over-year and period-over-period changes, then combined intermediate findings into a report. Added timeouts, retries, and fallback handling. Used sample reports to guide formatting and summaries with a sliding window to retain relevant context.
 - **Result** — Averaged 600+ calls per month after launch. About 55% were reporting tasks and 45% were requirements or attribution tasks. One report took 1–2 hours to write manually and 5–15 minutes to generate with the agent.
 
 ## AI Thumbnail Generator
 
 - **Background** — Creators publishing across platforms needed thumbnails in different sizes.
-- **My responsibilities** — own the asset inputs, generation workflow, and subscription features.
+- **My responsibilities** — Owned the project, including the frontend, payments and subscriptions, and the workflow from asset upload to image generation.
 - **Action** — Implemented platform size presets and subject and style inputs in Next.js. Integrated an image generation API with platform and style prompts, and built free usage and subscription flows.
 - **Result** — Shipped thumbnail generation, preview, and download for multiple platforms, with batch generation and high-resolution export for subscribers.

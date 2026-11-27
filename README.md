@@ -4,13 +4,15 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-OfferHunter 是一个适用于 Claude、ChatGPT、Codex、Grok 等 AI 助手的开源简历技能，适合准备投递 AI 岗位的人。把旧简历、项目笔记和目标岗位的 JD 交给它，就可以从头写一份简历、调整栏目顺序，或重写某段经历。支持中文、英文和双语简历。
+**用真实项目写一份能经得起追问的 AI 求职简历。**
 
-- **怎么写项目**：以 EC-Monica 电商 Agent 为例，展示如何交代业务背景、上线效果和本人负责的工作。[项目示例](skills/resume-engineering/references/examples.md)
-- **不同岗位怎么选经历**：用 100 条 BOSS 直聘岗位样本，了解应用开发、模型训练、评测、AI 产品等岗位分别关注什么。[岗位参考](skills/resume-engineering/references/ai-roles.md)
-- **整份简历怎么排**：从页首的联系方式和教育信息，到工作、实习和独立项目，附黑白单栏 HTML 和 LaTeX 模板。[简历结构](skills/resume-engineering/references/resume-structure.md)
+OfferHunter 是一个开源的简历写作技能。把项目笔记或旧简历交给 Claude、ChatGPT、Codex、Grok 等助手，就能从头写一份简历、调整栏目顺序，或按岗位描述改写项目经历。支持中文、英文和双语稿。
 
-[快速开始](#快速开始) · [STAR 写法](#用-star-写项目经历) · [HTML 模板](#html-简历模板) · [常见问题](#常见问题)
+- [看项目怎么写](skills/resume-engineering/references/examples.md)：EC-Monica 案例把项目负责人的工作、技术实现和上线数据分别写清。
+- [按岗位选经历](skills/resume-engineering/references/ai-roles.md)：对照 100 条 BOSS 直聘岗位样本和按岗位整理的取材指南，找出最相关的项目。
+- [看简历模板](#html-简历模板)：页首并列放 GitHub 和可核验的作品链接。可以复制 HTML，也可以使用黑白单栏 LaTeX 模板。
+
+[快速开始](#快速开始) · [STAR 写法](#用-star-写项目经历) · [常见问题](#常见问题)
 
 ## 快速开始
 
@@ -56,7 +58,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## 整份简历与 LaTeX
 
-可以从旧简历或项目笔记起草整份简历，也可以调整栏目顺序、压缩正文或只改一段经历。默认沿用「页首 → 工作经历 → 实习经历 → AI 创业／独立项目」的结构，按需呈现教育、开源和奖项。LaTeX 版采用简洁的黑白单栏排版。
+先在页首写求职方向、联系方式和作品链接，再按实际经历安排工作、实习和项目。教育、开源和奖项可按需要放在页首或单独列出。LaTeX 模板采用黑白单栏。
 
 [简历结构](skills/resume-engineering/references/resume-structure.md) · [LaTeX 模板](skills/resume-engineering/templates/resume.tex)
 
@@ -66,7 +68,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 示例从实习经历开始。有正式工作经历时，可复制公司和项目的结构，在实习前加上「工作经历」。
 
-复制下面的代码，保存为 `resume.html`，在浏览器中打开。填写后可用浏览器的打印功能导出 A4 PDF。
+展开源码并保存为 `resume.html`，用浏览器打开。填好内容后，可用打印菜单导出 A4 PDF。
 
 <details>
 <summary>展开并复制 HTML 源码</summary>
