@@ -14,36 +14,24 @@ OfferHunter 是一个适用于 Claude、ChatGPT、Codex、Grok 等 AI 助手的�
 
 ## 快速开始
 
-### Claude Code、Codex、Grok CLI
-
-在你的项目目录中执行：
+在项目目录里克隆仓库，再按客户端选一条安装命令。
 
 ```sh
 git clone https://github.com/LofiSu/OfferHunter.git
 ```
 
-按你使用的客户端选择一行。把整个技能目录复制过去，示例和模板也会一起安装。
-
 ```sh
 # Claude Code
 mkdir -p .claude/skills && cp -R OfferHunter/skills/resume-engineering .claude/skills/
-
-# OpenAI Codex
+# Codex
 mkdir -p .agents/skills && cp -R OfferHunter/skills/resume-engineering .agents/skills/
-
 # Grok CLI
 mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skills/
 ```
 
-在项目里开启新会话，请 Agent 使用 `resume-engineering`，并提供简历、项目笔记或目标 JD。其他支持 Agent Skills 的客户端可以把同一个目录放到它的技能目录。安装路径见[Claude Code 文档](https://code.claude.com/docs/en/skills)、[OpenAI 文档](https://developers.openai.com/api/reference/cli)及 [Grok CLI 文档](https://docs.x.ai/build/features/skills-plugins-marketplaces)。
+开启新会话，请助手使用 `resume-engineering`。
 
-### ChatGPT、Claude、Grok 网页端和其他聊天助手
-
-上传或粘贴 [SKILL.md](skills/resume-engineering/SKILL.md)，再附上简历或项目笔记。有目标岗位时一并提供 JD。需要参考示例、结构或模板时，也把对应文件发给助手。可以直接这样说：
-
-> 请按附件里的 resume-engineering 规则，为我写一份 AI 岗位简历。经历里的每个项目都用 STAR 整理，结果按现有材料写。
-
-OpenAI API 集成也可以按官方文档把整个目录作为 Skill 使用。[OpenAI API Skills 指南](https://developers.openai.com/api/docs/guides/tools-skills)
+**ChatGPT、Claude、Grok 网页端**：上传或粘贴 [SKILL.md](skills/resume-engineering/SKILL.md)，附上简历或项目笔记。有目标 JD 时一并提供。使用 OpenAI API 可参考[官方指南](https://developers.openai.com/api/docs/guides/tools-skills)。
 
 ## 用 STAR 写项目经历
 

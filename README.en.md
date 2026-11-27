@@ -14,36 +14,24 @@ English | [简体中文](README.md)
 
 ## Quick Start
 
-### Claude Code, OpenAI Codex, and Grok CLI
-
-Run this from your project:
+Clone into your project, then run the install command for your client.
 
 ```sh
 git clone https://github.com/LofiSu/OfferHunter.git
 ```
 
-Choose the command for your client. Copy the entire folder to include examples and templates.
-
 ```sh
 # Claude Code
 mkdir -p .claude/skills && cp -R OfferHunter/skills/resume-engineering .claude/skills/
-
-# OpenAI Codex
+# Codex
 mkdir -p .agents/skills && cp -R OfferHunter/skills/resume-engineering .agents/skills/
-
 # Grok CLI
 mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skills/
 ```
 
-Start a new session in the project, ask the agent to use `resume-engineering`, and provide your resume, project notes, or target job description. Other clients that support Agent Skills can load the same folder from their skills directory. See [Claude Code](https://code.claude.com/docs/en/skills), [OpenAI Codex](https://developers.openai.com/api/reference/cli), and [Grok CLI](https://docs.x.ai/build/features/skills-plugins-marketplaces).
+Start a new session and ask your agent to use `resume-engineering`.
 
-### ChatGPT, Claude, Grok, and other chat assistants
-
-Attach or paste [SKILL.md](skills/resume-engineering/SKILL.md) along with your resume or project notes. Add the target job description if you have it. Attach any linked example, structure guide, or template you want the assistant to use. For example:
-
-> Use the attached resume-engineering instructions to draft my AI resume. Apply STAR to every project and use only outcomes supported by my notes.
-
-OpenAI API integrations can also use the complete folder through the documented Skills interface. [OpenAI API Skills guide](https://developers.openai.com/api/docs/guides/tools-skills)
+**ChatGPT, Claude, and Grok on the web** — Attach or paste [SKILL.md](skills/resume-engineering/SKILL.md) with your resume or project notes and, if available, the target job description. For API integrations, see the [OpenAI Skills guide](https://developers.openai.com/api/docs/guides/tools-skills).
 
 ## Write with STAR
 
