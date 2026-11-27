@@ -30,20 +30,26 @@ Fictional notes — A support team piloted a knowledge assistant. The candidate 
 
 ## Real project example · EC-Monica, an e-commerce operations agent
 
+### How the resume entry evolved
+
+The earliest draft introduced A/B experiments, dashboards, and requirements documents under business context, then established end-to-end ownership. Later versions split the implementation into the agent workflow, tool registry, and context engineering. The current resume puts adoption and report turnaround before the technical details.
+
 ### STAR notes
 
-- **Situation** — E-commerce product, operations, and engineering teams needed to analyze business data, draft reports, interpret requirements, and investigate changes in business metrics.
-- **Task** — Own the project from initial design through launch and build an agent for those workflows.
-- **Action** — Route requests by intent to tool execution or direct generation. Select tools from a registry, calculate year-over-year and period-over-period changes, and inject the results into context. Generate intermediate findings and synthesize them into a report. Handle tool timeouts and errors with retries and a fallback path. Use sample reports and operations templates as few-shot examples, and manage multi-turn context with summaries and a sliding window.
-- **Result** — Shipped to product, operations, and engineering teams with support for analysis reports, requirements interpretation, and business attribution. Include measurement scope and comparison conditions when reporting quantitative outcomes.
+- **Situation** — E-commerce product, operations, and engineering teams needed to interpret experiments and dashboards, write reports, investigate metric changes, and analyze requirements.
+- **Task** — Own EC-Monica from initial design through launch.
+- **Action** — Route requests by intent, register tools through configuration, calculate year-over-year and period-over-period metrics in Python, and synthesize intermediate findings into reports. Add tool failure handling and use examples, summaries, and a sliding window to guide multi-turn analysis.
+- **Result** — The resume records 600+ calls per month on average. About 55% were reporting tasks and 45% were requirements or attribution tasks. A single report took 1–2 hours to write manually and 5–15 minutes to generate with the agent. The source does not specify the observation period or sample size.
 
 ### Resume-ready entry
 
-**EC-Monica · E-commerce Operations Agent | Project Owner**
+**EC-Monica · E-commerce Operations Agent**
 
-- **Context and goal** — Designed and launched an agent for e-commerce product, operations, and engineering teams, covering data analysis, report generation, requirements interpretation, and business attribution.
-- **Agent workflow** — Implemented intent routing and registry-based tool selection. Injected year-over-year and period-over-period calculations into context, generated intermediate findings, and synthesized them into reports. Added retry, error classification, and fallback handling for tool calls.
-- **Context engineering** — Added business reports and operations templates as few-shot examples. Used summaries and a sliding window to carry forward observations and findings during multi-step analysis.
-- **Launch** — Delivered report generation, requirements interpretation, and attribution workflows to product, operations, and engineering users.
+- **Business context** — Built an agent for e-commerce product, operations, and engineering teams to analyze A/B experiments and dashboards, produce reports, investigate metric changes, and interpret requirements.
+- **Adoption and impact** — Averaged 600+ calls per month after launch. About 55% were reporting tasks and 45% were requirements or attribution tasks. A single report took 1–2 hours to write manually and 5–15 minutes to generate with the agent.
+- **My contributions** — Owned the project from design through launch.
+  - **Agentic workflow** — Routed requests by intent to tool calls or direct generation. Executed tools iteratively, produced intermediate findings, and synthesized reports. Added timeouts, retries, error classification, and a direct-generation fallback.
+  - **Tool registry** — Registered function schemas through configuration across user behavior, GMV, acquisition channels, and product analysis. Added analysis tools by extending the configuration.
+  - **Context engineering** — Calculated year-over-year and period-over-period metrics in Python, added report examples and operations templates, and carried forward key findings with summaries and a sliding window.
 
-For AI application engineering, lead with routing, failure handling, and context management. For AI product roles, lead with users, the workflows delivered, and verified usage evidence.
+For AI application engineering, retain the three implementation headings. For AI product roles, lead with users, task mix, and report turnaround, and compress the implementation into one bullet.
