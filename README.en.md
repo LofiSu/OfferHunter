@@ -64,11 +64,13 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 [Resume structure](skills/resume-engineering/references/resume-structure.md) · [LaTeX template](skills/resume-engineering/templates/resume.tex)
 
+Identify the one thing you want a recruiter to remember, then support it with a work sample or an outcome. Put that line directly below your name.
+
 Use one sentence in the header to introduce your work or internship experience, a linked work sample, and what you want to do next. [Bilingual examples](skills/resume-engineering/references/resume-structure.md#一句话自我介绍)
 
 ## HTML Resume Template
 
-![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-intro-en.png)
+![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-highlight-en.png)
 
 This example starts with internships. If you have full-time experience, reuse the employer and project markup to add a Work Experience section above it.
 
@@ -95,6 +97,7 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
     h1 { font-size: 21pt; line-height: 1.15; margin: 0 0 .15em; }
     header p { margin: .12em 0; }
     a { color: inherit; overflow-wrap: anywhere; }
+    .highlight { color: #193677; }
     .intro { margin: .28em 0; }
     .profile, .open-source { font-weight: 700; }
     .section-title {
@@ -123,6 +126,7 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
 <body>
   <header>
     <h1>Your Name</h1>
+    <p class="highlight"><strong>Key strength</strong> · What I do best, backed by a result or a work sample.</p>
     <p>Phone number ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
     <p class="profile">Target role</p>
     <p class="open-source"><a href="https://github.com/username">GitHub</a> ｜ <a href="https://example.com/portfolio">Portfolio</a></p>
