@@ -60,7 +60,7 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Single-column resume preview with a target role, internships, and four-line STAR project entries](assets/resume-preview-target-role-en.png)
+![Single-column resume preview with a target role, internships, and four-line STAR project entries](assets/resume-preview-pdf-layout-en.png)
 
 This example starts with internships. If you have full-time experience, reuse the employer and project markup to add a Work Experience section above it.
 
@@ -77,65 +77,79 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Name</title>
   <style>
-    @page { size: A4; margin: 17mm 19mm; }
+    @page { size: A4; margin: 11mm; }
+    * { box-sizing: border-box; }
     body {
-      max-width: 172mm; margin: 2rem auto; padding: 0 1rem;
-      color: #171717; background: #fff;
-      font: 11pt/1.45 "Times New Roman", "Songti SC", "Noto Serif CJK SC", serif;
+      max-width: 210mm; margin: 0 auto; padding: 11mm;
+      background: #fff; color: #161616;
+      font: 10.5pt/1.38 Georgia, "Songti SC", "Noto Serif CJK SC", serif;
     }
-    h1 { margin: 0 0 .2em; font-size: 25pt; }
-    h2 { margin: 1em 0 .35em; border-bottom: 1px solid; font-size: 13pt; }
-    h3, p { margin: .25em 0; }
-    h3 { font-size: 11pt; }
-    ul { margin: .25em 0; padding-inline-start: 1.2em; }
-    li { margin: .2em 0; }
-    a { color: inherit; }
-    .target-role { font-weight: 700; }
-    .contact { overflow-wrap: anywhere; }
-    .resume-company-heading { margin: .4em 0; }
-    .resume-project { margin: .4em 0 .6em; }
-    .resume-project h4 { margin: .2em 0; font-size: 11pt; }
-    ul ul { list-style-type: circle; }
+    h1 { font-size: 21pt; line-height: 1.15; margin: 0 0 .15em; }
+    header p { margin: .12em 0; }
+    a { color: inherit; overflow-wrap: anywhere; }
+    .profile, .open-source { font-weight: 700; }
+    .section-title {
+      color: #174add; border-bottom: 1.5px solid #315eed;
+      font-size: 15pt; margin: .55em 0 .35em; padding-bottom: .16em;
+    }
+    .employer {
+      background: #f0f1f3; border-radius: 4px;
+      margin: .45em 0 .3em; padding: .32em .55em; font-size: 11pt;
+    }
+    .project-title { color: #193677; margin: .55em 0 .15em; font-size: 11pt; }
+    .star { margin: 0; padding-inline-start: 1.25em; }
+    .star > li { margin: .16em 0; }
+    .star ul { list-style: circle; margin: .1em 0 0; padding-inline-start: 1.25em; }
+    .star-action li { margin: .12em 0; }
     @media print {
       body { max-width: none; margin: 0; padding: 0; }
       h2, h3, h4 { break-after: avoid; }
       li { break-inside: avoid; }
+      .employer { print-color-adjust: exact; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Your Name</h1>
-    <p class="target-role">Target role: Agent Infrastructure and Applied ML</p>
-    <p class="contact"><a href="https://github.com/username">github.com/username</a> |
-      <a href="tel:+12025550101">+1 202 555 0101</a> |
-      <a href="mailto:hello@example.com">hello@example.com</a></p>
-    <p>University · Degree (2022–2026)</p>
-    <p><strong>Open source</strong> · Project name | Contribution or community role</p>
+    <p>Phone number ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p class="profile">Target role: Agent Infrastructure and Applied ML</p>
+    <p class="open-source"><a href="https://github.com/username">github.com/username</a> ｜ Project name · Community role or selected contribution</p>
+    <p>University | Degree and program | 2022–2026</p>
   </header>
   <main>
     <section>
-      <h2>Internships</h2>
-      <h3 class="resume-company-heading">Company · E-commerce Team | AI Application Intern | Jun–Sep 2025 (example)</h3>
+      <h2 class="section-title">Internships</h2>
+      <h3 class="employer">Company · E-commerce Team | AI Application Intern | Jun–Sep 2025 (example)</h3>
       <article class="resume-project">
-        <h4>EC-Monica · E-commerce Operations Agent</h4>
-        <ul>
+        <h4 class="project-title">EC-Monica · E-commerce Operations Agent</h4>
+        <ul class="star">
           <li><strong>Situation</strong> · E-commerce teams needed to query data, investigate metric changes, and write reports.</li>
-          <li><strong>Task | My role</strong> · As project owner, I was responsible for designing the e-commerce operations agent, orchestrating its tools, and taking it through launch.</li>
-          <li><strong>Action</strong> · Built intent routing, retries, and fallback handling. Used Python to calculate year-over-year and period-over-period changes, and used operations templates to guide report generation.</li>
+          <li><strong>Task</strong> · Build an e-commerce operations agent. <strong>My role</strong> · Project owner responsible for design, tool orchestration, and launch.</li>
+          <li class="star-action"><strong>Action</strong>
+            <ul>
+              <li><strong>Agent workflow</strong> · Implemented intent routing and tool execution with retries and fallback.</li>
+              <li><strong>Context engineering</strong> · Calculated year-over-year and period-over-period changes in Python and used operations templates to guide reports.</li>
+            </ul>
+          </li>
           <li><strong>Result</strong> · Averaged 600+ calls per month. Reports took 1–2 hours to write manually and 5–15 minutes to generate.</li>
         </ul>
       </article>
     </section>
 
     <section>
-      <h2>Independent AI Projects</h2>
+      <h2 class="section-title">Independent AI Projects</h2>
       <article class="resume-project">
-        <h4>AI Thumbnail Generator</h4>
-        <ul>
+        <h4 class="project-title">AI Thumbnail Generator</h4>
+        <ul class="star">
           <li><strong>Situation</strong> · Creators needed thumbnails in different sizes for different platforms.</li>
-          <li><strong>Task | My role</strong> · I owned the generation workflow and subscription features, from platform selection and asset uploads through preview and download.</li>
-          <li><strong>Action</strong> · Built platform presets, subject uploads, and style-reference inputs in Next.js. Used platform-specific prompts to call an image generation API and implemented free usage and subscriptions.</li>
+          <li><strong>Task</strong> · Let creators select a platform and generate a thumbnail from their assets. <strong>My role</strong> · Owned asset inputs, the generation workflow, and subscriptions.</li>
+          <li class="star-action"><strong>Action</strong>
+            <ul>
+              <li><strong>Thumbnail generation</strong> · Built platform presets and asset inputs in Next.js, then called the image generation API with platform and style prompts.</li>
+              <li><strong>Subscriptions</strong> · Implemented free usage and subscriptions with batch generation and high-resolution export for subscribers.</li>
+            </ul>
+          </li>
           <li><strong>Result</strong> · Shipped multi-platform preview and download, with batch generation and high-resolution export for subscribers.</li>
         </ul>
       </article>

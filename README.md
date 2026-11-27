@@ -62,7 +62,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## HTML 简历模板
 
-![中文简历模板预览，包含求职方向、实习经历和按 STAR 撰写的 AI 项目](assets/resume-preview-target-role-zh.png)
+![中文简历模板预览，包含求职方向、实习经历和按 STAR 撰写的 AI 项目](assets/resume-preview-pdf-layout-zh.png)
 
 示例从实习经历开始。有正式工作经历时，可复制公司和项目的结构，在实习前加上「工作经历」。
 
@@ -79,65 +79,79 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>候选人姓名</title>
   <style>
-    @page { size: A4; margin: 17mm 19mm; }
+    @page { size: A4; margin: 11mm; }
+    * { box-sizing: border-box; }
     body {
-      max-width: 172mm; margin: 2rem auto; padding: 0 1rem;
-      color: #171717; background: #fff;
-      font: 11pt/1.45 "Times New Roman", "Songti SC", "Noto Serif CJK SC", serif;
+      max-width: 210mm; margin: 0 auto; padding: 11mm;
+      background: #fff; color: #161616;
+      font: 10.5pt/1.38 Georgia, "Songti SC", "Noto Serif CJK SC", serif;
     }
-    h1 { margin: 0 0 .2em; font-size: 25pt; }
-    h2 { margin: 1em 0 .35em; border-bottom: 1px solid; font-size: 13pt; }
-    h3, p { margin: .25em 0; }
-    h3 { font-size: 11pt; }
-    ul { margin: .25em 0; padding-inline-start: 1.2em; }
-    li { margin: .2em 0; }
-    a { color: inherit; }
-    .target-role { font-weight: 700; }
-    .contact { overflow-wrap: anywhere; }
-    .resume-company-heading { margin: .4em 0; }
-    .resume-project { margin: .4em 0 .6em; }
-    .resume-project h4 { margin: .2em 0; font-size: 11pt; }
-    ul ul { list-style-type: circle; }
+    h1 { font-size: 21pt; line-height: 1.15; margin: 0 0 .15em; }
+    header p { margin: .12em 0; }
+    a { color: inherit; overflow-wrap: anywhere; }
+    .profile, .open-source { font-weight: 700; }
+    .section-title {
+      color: #174add; border-bottom: 1.5px solid #315eed;
+      font-size: 15pt; margin: .55em 0 .35em; padding-bottom: .16em;
+    }
+    .employer {
+      background: #f0f1f3; border-radius: 4px;
+      margin: .45em 0 .3em; padding: .32em .55em; font-size: 11pt;
+    }
+    .project-title { color: #193677; margin: .55em 0 .15em; font-size: 11pt; }
+    .star { margin: 0; padding-inline-start: 1.25em; }
+    .star > li { margin: .16em 0; }
+    .star ul { list-style: circle; margin: .1em 0 0; padding-inline-start: 1.25em; }
+    .star-action li { margin: .12em 0; }
     @media print {
       body { max-width: none; margin: 0; padding: 0; }
       h2, h3, h4 { break-after: avoid; }
       li { break-inside: avoid; }
+      .employer { print-color-adjust: exact; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>候选人姓名</h1>
-    <p class="target-role">求职方向：Agent 基础设施与算法工程</p>
-    <p class="contact"><a href="https://github.com/username">github.com/username</a> |
-      <a href="tel:+8613800000000">+86 138 0000 0000</a> |
-      <a href="mailto:hello@example.com">hello@example.com</a></p>
-    <p>学校 · 专业（2022–2026）</p>
-    <p><strong>开源贡献</strong> · 项目名称｜贡献内容或社区角色</p>
+    <p>手机号 ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p class="profile">Agent 基础设施与算法工程｜求职方向</p>
+    <p class="open-source"><a href="https://github.com/username">github.com/username</a> ｜ 项目名 · 社区角色或代表性贡献</p>
+    <p>学校｜专业与培养项目｜2022–2026</p>
   </header>
   <main>
     <section>
-      <h2>实习经历</h2>
-      <h3 class="resume-company-heading">公司 · 电商团队｜AI 应用实习生｜2025.06–2025.09（示例）</h3>
+      <h2 class="section-title">实习经历</h2>
+      <h3 class="employer">公司 · 电商团队｜AI 应用实习生｜2025.06–2025.09（示例）</h3>
       <article class="resume-project">
-        <h4>EC-Monica 电商产运 Agent</h4>
-        <ul>
+        <h4 class="project-title">EC-Monica 电商产运 Agent</h4>
+        <ul class="star">
           <li><strong>情境</strong> · 电商团队需要查数、分析指标波动并撰写报告。</li>
-          <li><strong>任务｜我的职责</strong> · 我是项目负责人，负责电商产运 Agent 从方案设计、工具编排到上线交付。</li>
-          <li><strong>行动</strong> · 实现意图识别和工具路由，为调用加入超时重试和降级。用 Python 计算同比、环比，引导模型按运营模板生成报告。</li>
+          <li><strong>任务</strong> · 搭建电商产运 Agent。<strong>我的职责</strong> · 担任项目负责人，负责方案设计、工具编排和上线交付。</li>
+          <li class="star-action"><strong>行动</strong>
+            <ul>
+              <li><strong>Agent 工作流</strong> · 实现意图识别和工具路由，失败时支持超时重试和降级。</li>
+              <li><strong>上下文工程</strong> · 用 Python 计算同比、环比，再用运营模板指导报告生成。</li>
+            </ul>
+          </li>
           <li><strong>结果</strong> · 月均调用 600+ 次。单次报告人工编写需 1–2 小时，使用 Agent 生成需 5–15 分钟。</li>
         </ul>
       </article>
     </section>
 
     <section>
-      <h2>AI 创业／独立项目</h2>
+      <h2 class="section-title">AI 创业／独立项目</h2>
       <article class="resume-project">
-        <h4>AI 封面图生成工具</h4>
-        <ul>
+        <h4 class="project-title">AI 封面图生成工具</h4>
+        <ul class="star">
           <li><strong>情境</strong> · 多平台创作者需要符合各平台尺寸的封面。</li>
-          <li><strong>任务｜我的职责</strong> · 我负责封面图工具的生成流程和订阅功能，交付从选平台、上传素材到预览和下载的完整流程。</li>
-          <li><strong>行动</strong> · 用 Next.js 实现平台尺寸预设、主体上传和风格参考图输入。按平台场景组织提示词，接入图像生成 API，并实现免费额度和订阅。</li>
+          <li><strong>任务</strong> · 让创作者选平台、上传素材后即可生成封面。<strong>我的职责</strong> · 负责素材输入、封面生成流程和订阅功能。</li>
+          <li class="star-action"><strong>行动</strong>
+            <ul>
+              <li><strong>封面生成</strong> · 用 Next.js 实现平台尺寸预设、主体上传和风格参考图输入，按平台和风格组织提示词并调用图像生成 API。</li>
+              <li><strong>订阅功能</strong> · 实现免费额度和订阅，为订阅用户提供批量生成与高清导出。</li>
+            </ul>
+          </li>
           <li><strong>结果</strong> · 已支持多平台封面预览和下载，订阅用户可批量生成和导出高清图。</li>
         </ul>
       </article>
