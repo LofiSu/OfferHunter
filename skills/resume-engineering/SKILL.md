@@ -28,3 +28,7 @@ license: MIT
 - 每条核心经历都能用素材回答「为什么这样做」「结果怎么知道」。素材薄弱时保留能确定的动作和交付。
 - 数字与单位一致，团队成果有明确主语，正文没有待确认占位符。面向公开场合时移除未获准公开的指标、内部项目标识和私人链接。
 - 用户要求成稿时先给可直接粘贴的文本。只在确实影响措辞时，附最多三个按优先级排序的待确认项。用户要求直接给稿时，用简短陈述说明影响最大的证据缺口。做原稿审阅时先指出最影响判断的几处，并给出替换文案。
+
+## English requests
+
+For English requests, read the [English STAR workflow and examples](references/workflow.en.md) and deliver the resume in English. For bilingual requests, write both drafts from the same verified facts, maintaining ownership, scope, and metric definitions across languages.
