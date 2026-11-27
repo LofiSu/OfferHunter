@@ -60,7 +60,7 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Single-column resume preview with work experience, internships, and independent AI projects](assets/resume-preview-star-role-en.png)
+![Single-column resume preview with work experience, internships, and independent AI projects](assets/resume-preview-project-ownership-en.png)
 
 Copy the code into `resume.html`, open it in a browser, and use the print menu to export an A4 PDF.
 
@@ -123,8 +123,8 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
         <h4>EC-Monica · E-commerce Operations Agent</h4>
         <ul>
           <li><strong>Situation</strong> · E-commerce teams needed to query data, investigate metric changes, and write reports.</li>
-          <li><strong>Task</strong> · Build an e-commerce operations agent. <strong>My role</strong>: project owner from design through launch.</li>
-          <li><strong>Action</strong> · Built intent routing and tool calls to calculate metrics and synthesize reports.</li>
+          <li><strong>Task | My role</strong> · As project owner, I was responsible for designing the e-commerce operations agent, orchestrating its tools, and taking it through launch.</li>
+          <li><strong>Action</strong> · Built intent routing, retries, and fallback handling. Used Python to calculate year-over-year and period-over-period changes, and used operations templates to guide report generation.</li>
           <li><strong>Result</strong> · Averaged 600+ calls per month. Reports took 1–2 hours to write manually and 5–15 minutes to generate.</li>
         </ul>
       </article>
@@ -136,8 +136,8 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
         <h4>AI Thumbnail Generator</h4>
         <ul>
           <li><strong>Situation</strong> · Creators needed thumbnails in different sizes for different platforms.</li>
-          <li><strong>Task</strong> · Build a thumbnail generator. <strong>My role</strong>: own the asset inputs, generation workflow, and subscription features.</li>
-          <li><strong>Action</strong> · Built platform presets and asset inputs in Next.js and integrated an image generation API.</li>
+          <li><strong>Task | My role</strong> · I owned the generation workflow and subscription features, from platform selection and asset uploads through preview and download.</li>
+          <li><strong>Action</strong> · Built platform presets, subject uploads, and style-reference inputs in Next.js. Used platform-specific prompts to call an image generation API and implemented free usage and subscriptions.</li>
           <li><strong>Result</strong> · Shipped multi-platform preview and download, with batch generation and high-resolution export for subscribers.</li>
         </ul>
       </article>
