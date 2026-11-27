@@ -1,5 +1,7 @@
 # 按 BOSS 直聘 JD 投递
 
+[English](boss-application.en.md)
+
 ## 先改简历
 
 1. 读用户给出的职位链接、截图或 JD 正文，确认职位名称、主要工作和要交付的东西。页面打不开或只显示职位标题时，请用户补充职责截图或正文。只有部分描述时，根据可见信息先改能确认的部分。
@@ -26,5 +28,3 @@
 目标岗位的工作重点是 AI 应用开发，包括工具调用和报告生成。下面用 EC-Monica 项目里的职责回应这两项工作。
 
 > 您好，我想了解贵司的 AI 应用工程师岗位。我在电商团队实习时负责过分析 Agent 的设计和上线：先按用户意图判断是否需要查数，再调用相应工具、计算同比和环比，最后把阶段结论汇总成报告。我也负责了工具调用的超时重试和降级。方便的话，想和您进一步聊聊这个岗位。
-
-For English outreach, follow the same structure: name the role, name the team or role where the work happened and give one concrete example of what you owned and how you built it, and close with a short invitation to talk.

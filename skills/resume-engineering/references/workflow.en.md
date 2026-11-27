@@ -8,16 +8,21 @@ Apply STAR to every project, including work, internships, open-source contributi
 4. Keep metrics tied to the known baseline, unit, measurement window, and environment. Distinguish offline evaluation, pilot outcomes, and production results. Attribute team results explicitly. Use qualitative evidence when a number is unavailable, and use causal wording only when the evidence supports it.
 5. Deliver the copy-ready text first. Keep unresolved facts outside the resume and mention up to three only when they affect the wording. Remove confidential details from public-facing drafts.
 
-## EC-Monica · E-commerce Operations Agent
+## Project excerpts from the original resume
 
-- **Background** — E-commerce product, operations, and engineering teams needed to query business data, investigate metric changes, and prepare reports.
-- **My responsibilities** — Owned the project from design through launch, including tool orchestration and model context.
-- **Action** — Routed each request to direct generation or a tool. For data queries, calculated year-over-year and period-over-period changes, then combined intermediate findings into a report. Added timeouts, retries, and fallback handling. Used sample reports to guide formatting and summaries with a sliding window to retain relevant context.
-- **Result** — Averaged 600+ calls per month after launch. About 55% were reporting tasks and 45% were requirements or attribution tasks. One report took 1–2 hours to write manually and 5–15 minutes to generate with the agent.
+The examples below follow the original resume's headings. For a new draft, use Background, My Responsibilities, Action, and Result as described above.
 
-## AI Thumbnail Generator
+### EC-Monica · E-commerce Operations Agent
 
-- **Background** — Creators publishing across platforms needed thumbnails in different sizes.
-- **My responsibilities** — Owned the project, including the frontend, payments and subscriptions, and the workflow from asset upload to image generation.
-- **Action** — Implemented platform size presets and subject and style inputs in Next.js. Integrated an image generation API with platform and style prompts, and built free usage and subscription flows.
-- **Result** — Shipped thumbnail generation, preview, and download for multiple platforms, with batch generation and high-resolution export for subscribers.
+**Douyin E-commerce · Marketing and Interactive Experiences | May–September 2025**
+
+- **Background:** Built an e-commerce agent for product, operations, and engineering teams to analyze data, generate reports, investigate business changes, and interpret requirements documents.
+- **Impact:** The agent averaged 600+ calls per month after launch. Reports accounted for about 55% of calls, and requirements analysis and attribution accounted for about 45%. A single analysis report took 1–2 hours to write manually and 5–15 minutes to generate with the agent. Using sample business reports as few-shot examples improved alignment with internal templates. Repeat usage and proactive recommendations continued to rise.
+- **My responsibilities:** Owned the project from initial design through launch.
+  - **Agentic Workflow:** Classified intent and routed requests to direct generation or tool execution. The Tool Registry loaded function schemas from `cfg.json`. For tool-based requests, the workflow selected tools iteratively, calculated year-over-year and period-over-period changes, and added those figures to the model context. The model generated intermediate findings and assembled them into a final report. The tool layer classified errors and retried timed-out calls, with direct generation as the fallback.
+  - **Context Engineering:** Used sample business reports and operations templates as few-shot examples. Summarized tool observations and applied a sliding window so later reasoning steps could reuse the relevant findings.
+
+### Thumbnail AI · Mountex
+
+- **Product overview:** A multi-platform AI thumbnail tool built with MkSaaS and Next.js ([thumbnail-ai.com](https://www.thumbnail-ai.com/)). Creators publishing on YouTube, Instagram, Facebook, X, LinkedIn, or TikTok can select a platform size, choose a style reference, and upload a subject to produce a thumbnail in three steps. The tool is designed to help creators improve click-through rates.
+- **My responsibilities:** Owned the project from the start. Built the Next.js frontend, payment and subscription flows, and platform size and style settings. Designed and integrated the image generation workflow, including prompts, batch generation in multiple sizes, and improvements to cost and usability.

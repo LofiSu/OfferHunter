@@ -39,7 +39,7 @@ Markdown 和 HTML 各用四项列表，LaTeX 用四个 `item`。英文用 **Back
 
 ## 按 BOSS 直聘 JD 改简历和写打招呼语
 
-用户提供 BOSS 直聘职位链接、截图或 JD 正文时，按 [BOSS 直聘投递写法](references/boss-application.md)处理。用该岗位的实际职责挑选和改写经历，每个项目仍保留「背景、我的职责、行动、结果」。用户同时要简历和打招呼语时，先给简历正文，再给一条可直接复制的打招呼语。用户只要其中一项时，只交付该项。
+用户提供 BOSS 直聘职位链接、截图或 JD 正文时，按 [BOSS 直聘投递写法](references/boss-application.md)处理，英文稿可用 [English application guide](references/boss-application.en.md)。用该岗位的实际职责挑选和改写经历，每个项目仍保留「背景、我的职责、行动、结果」。用户同时要简历和打招呼语时，先给简历正文，再给一条可直接复制的打招呼语。用户只要其中一项时，只交付该项。
 
 ## 交付
 
