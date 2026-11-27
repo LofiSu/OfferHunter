@@ -1,8 +1,26 @@
 # OfferHunter
 
-[简体中文](README.md)
+English | [简体中文](README.md)
 
-OfferHunter is an open-source Agent Skill for writing, reviewing, and tailoring resumes for AI-related roles. It covers research, engineering, infrastructure, data, evaluation, safety, product, design, governance, and customer-facing deployment.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+OfferHunter is an open-source Agent Skill that turns real project experience into STAR resumes for AI roles, in English or Chinese.
+
+## One-Line Agent Setup
+
+```text
+Clone https://github.com/LofiSu/OfferHunter and install skills/resume-engineering into .agents/skills/ in my current Codex project.
+```
+
+## Quick Start
+
+```sh
+git clone https://github.com/LofiSu/OfferHunter.git /path/to/OfferHunter
+mkdir -p .agents/skills
+cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
+```
+
+Invoke `$resume-engineering` in that project with your resume or project notes and, if available, the target job description.
 
 ## Write with STAR
 
@@ -13,15 +31,14 @@ OfferHunter is an open-source Agent Skill for writing, reviewing, and tailoring 
 
 A project entry can open with **Context and goal**, then list **My contributions**, with outcomes attached where they can be attributed. For a one-page resume, compress those elements into a bullet.
 
-## Install in Codex
+Use OfferHunter for research, training, applications, infrastructure, data, evaluation, safety, product, design, governance, and customer-facing deployment. The target role guides which experiences to highlight.
 
-Clone this repository, then run the commands below in the project where you want to use the skill. Replace the source path with your clone's path.
+## Example
 
-```sh
-mkdir -p .agents/skills
-cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
-```
+“Rewrite these two projects for an AI evaluation role. Keep the offline test scope and distinguish my work from the team's results.”
 
-Invoke `$resume-engineering` with your resume, project notes, or a job description. For example, “Rewrite these two projects for an AI evaluation role. Keep the offline test scope and distinguish my work from the team's results.”
+See how an AI thumbnail generator project becomes a copy-ready resume entry. [English STAR workflow and examples](skills/resume-engineering/references/workflow.en.md)
 
-[English workflow](skills/resume-engineering/references/workflow.en.md) · [MIT License](LICENSE)
+## License
+
+[MIT](LICENSE)
