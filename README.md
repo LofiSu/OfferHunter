@@ -1,10 +1,16 @@
-# OfferHunter
+# OfferHunter · AI 岗位简历写作与 STAR 改写
 
 简体中文 | [English](README.en.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-OfferHunter 是一款开源 Agent Skill，用 STAR 将真实项目经历写成可投递的 AI 岗位简历。支持中文、英文和双语输出。
+**OfferHunter 是一款面向 AI 求职的开源简历写作 Agent Skill。** 用 Codex 把项目笔记、旧简历和岗位 JD 写成可投递的一页简历。可以从零写整份简历、重组工作与实习经历，也可以只改一条 STAR 项目要点。支持中文、英文和双语稿，附黑白单栏 HTML 与 LaTeX 简历模板。
+
+- **按目标岗位选素材**。适用于 LLM 与 Agent 应用工程、机器学习研究与工程、模型评测、AI 产品、数据、MLOps、推理平台和解决方案等方向。[100 条 BOSS 直聘岗位索引](skills/resume-engineering/references/ai-roles.md)
+- **用真实项目学习怎么写**。EC-Monica 电商 Agent 案例展示如何按「背景 → 指标与效果 → 我的职责」写清项目范围、技术链路和上线结果。[中文 STAR 案例](skills/resume-engineering/references/examples.md)
+- **让整份稿子更好扫读**。调整栏目顺序，压缩低相关内容，保留能说明个人职责和交付的证据。[简历结构指南](skills/resume-engineering/references/resume-structure.md)
+
+[快速开始](#快速开始) · [STAR 写法](#用-star-写项目经历) · [HTML 模板](#html-简历模板) · [常见问题](#常见问题)
 
 ## 一句话安装
 
@@ -119,6 +125,28 @@ Skill 默认输出可复制的简历文本。项目级结果与个人职责各�
 </body>
 </html>
 ```
+
+## 常见问题
+
+### 没有目标 JD，能先写一整份 AI 简历吗？
+
+可以。先用旧简历或项目笔记起草，优先写职责和结果最清楚的经历。拿到岗位 JD 后，再按该岗位的实际工作重排和精简。
+
+### STAR 法则怎么用在一页简历里？
+
+把情境和任务压成一句话，用动作写清个人贡献，再接上能核对的结果。团队数据写清归属。没有量化数据时，可以写已上线能力、实际采纳或验证发现。
+
+### HTML 或 LaTeX 简历如何导出 PDF？
+
+HTML 可用浏览器的打印菜单导出 A4 PDF。LaTeX 源文件可用 XeLaTeX 编译。两份模板都使用单栏布局，适合突出内容和阅读顺序。
+
+### BOSS 直聘岗位索引是什么？
+
+索引来自公开招聘列表，保留职位名、可见 JD 关键词、STAR 取材提示和来源。采集日期和访问限制见[岗位参考](skills/resume-engineering/references/ai-roles.md)。
+
+## 贡献
+
+欢迎通过 [Issues](https://github.com/LofiSu/OfferHunter/issues) 提交可追溯的公开 JD、脱敏案例或模板改进。如果 OfferHunter 帮你把一段经历写得更清楚，欢迎在 GitHub 点一颗 Star。
 
 ## 许可
 

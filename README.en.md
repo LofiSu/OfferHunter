@@ -1,10 +1,16 @@
-# OfferHunter
+# OfferHunter · Open-source AI Resume Writer and STAR Resume Skill
 
 English | [简体中文](README.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-OfferHunter is an open-source Agent Skill that turns real project experience into STAR resumes for AI roles, in English or Chinese.
+**OfferHunter is an open-source AI resume writer and editing skill for Codex.** Turn project notes, an existing resume or CV, and a target job description into a focused application. Draft a full resume, reorganize work and internship sections, or rewrite individual bullets using STAR. Write in English, Chinese, or both, with minimalist HTML and LaTeX templates.
+
+- **Tailor the resume to the role.** Use it for LLM and AI agent engineering, machine learning research, model evaluation, AI product management, data, MLOps, inference infrastructure, and solutions engineering. [100 BOSS Zhipin job samples](skills/resume-engineering/references/ai-roles.md)
+- **Learn from a real project.** The EC-Monica e-commerce agent example pairs business context and measurable impact with specific engineering contributions. [English STAR case study](skills/resume-engineering/references/workflow.en.md)
+- **Edit the whole document.** Reorder sections, shorten low-relevance entries, and foreground evidence of ownership and delivery. [Full resume structure](skills/resume-engineering/references/resume-structure.md)
+
+[Quick start](#quick-start) · [STAR method](#write-with-star) · [HTML template](#html-resume-template) · [FAQ](#faq)
 
 ## One-Line Agent Setup
 
@@ -117,6 +123,28 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
 </body>
 </html>
 ```
+
+## FAQ
+
+### Can I write a full AI resume without a target job description?
+
+Yes. Start with an existing resume or project notes and prioritize entries with clear ownership and outcomes. Once you have a job description, reorder and shorten the draft around the work that role actually does.
+
+### How do I use STAR on a one-page resume?
+
+Compress the situation and task into a short clause, then describe the action you took and the verified result. Attribute team outcomes. A shipped capability, documented adoption, or validated finding can also show impact.
+
+### How do I export a resume to PDF?
+
+Use your browser’s print menu to export the HTML version as A4 PDF. The LaTeX template is intended for XeLaTeX. Both use a single-column layout.
+
+### Where do the job description examples come from?
+
+The index uses public BOSS Zhipin recruiting lists. It records role titles, visible JD keywords, STAR prompts, and source links. See the [job reference](skills/resume-engineering/references/ai-roles.md) for collection dates and coverage.
+
+## Contributing
+
+Share traceable job postings, anonymized resume examples, or template improvements through [GitHub Issues](https://github.com/LofiSu/OfferHunter/issues). If OfferHunter helped you turn a project into a stronger resume entry, consider starring the repository.
 
 ## License
 
