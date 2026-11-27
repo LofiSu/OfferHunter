@@ -4,7 +4,7 @@ English | [简体中文](README.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**OfferHunter is an open-source AI resume writer and editing skill for Codex.** Turn project notes, an existing resume or CV, and a target job description into a focused application. Draft a full resume, reorganize work and internship sections, or rewrite individual bullets using STAR. Write in English, Chinese, or both, with minimalist HTML and LaTeX templates.
+**OfferHunter is an open-source AI resume writer and editing skill for Claude, ChatGPT, Codex, Grok, and other AI assistants.** Turn project notes, an existing resume or CV, and a target job description into a focused application. Draft a full resume, reorganize work and internship sections, or rewrite individual bullets using STAR. Write in English, Chinese, or both, with minimalist HTML and LaTeX templates.
 
 - **Tailor the resume to the role.** Use it for LLM and AI agent engineering, machine learning research, model evaluation, AI product management, data, MLOps, inference infrastructure, and solutions engineering. [100 BOSS Zhipin job samples](skills/resume-engineering/references/ai-roles.md)
 - **Learn from a real project.** The EC-Monica e-commerce agent example pairs business context and measurable impact with specific engineering contributions. [English STAR case study](skills/resume-engineering/references/workflow.en.md)
@@ -12,21 +12,38 @@ English | [简体中文](README.md)
 
 [Quick start](#quick-start) · [STAR method](#write-with-star) · [HTML template](#html-resume-template) · [FAQ](#faq)
 
-## One-Line Agent Setup
-
-```text
-Clone https://github.com/LofiSu/OfferHunter and install skills/resume-engineering into .agents/skills/ in my current Codex project.
-```
-
 ## Quick Start
 
+### Claude Code, OpenAI Codex, and Grok CLI
+
+Run this from your project:
+
 ```sh
-git clone https://github.com/LofiSu/OfferHunter.git /path/to/OfferHunter
-mkdir -p .agents/skills
-cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
+git clone https://github.com/LofiSu/OfferHunter.git
 ```
 
-Invoke `$resume-engineering` in that project with your resume or project notes and, if available, the target job description.
+Choose the command for your client. Copy the entire folder to include examples and templates.
+
+```sh
+# Claude Code
+mkdir -p .claude/skills && cp -R OfferHunter/skills/resume-engineering .claude/skills/
+
+# OpenAI Codex
+mkdir -p .agents/skills && cp -R OfferHunter/skills/resume-engineering .agents/skills/
+
+# Grok CLI
+mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skills/
+```
+
+Start a new session in the project, ask the agent to use `resume-engineering`, and provide your resume, project notes, or target job description. Other clients that support Agent Skills can load the same folder from their skills directory. See [Claude Code](https://code.claude.com/docs/en/skills), [OpenAI Codex](https://developers.openai.com/api/reference/cli), and [Grok CLI](https://docs.x.ai/build/features/skills-plugins-marketplaces).
+
+### ChatGPT, Claude, Grok, and other chat assistants
+
+Attach or paste [SKILL.md](skills/resume-engineering/SKILL.md) along with your resume or project notes. Add the target job description if you have it. Attach any linked example, structure guide, or template you want the assistant to use. For example:
+
+> Use the attached resume-engineering instructions to draft my AI resume. Apply STAR to every project and use only outcomes supported by my notes.
+
+OpenAI API integrations can also use the complete folder through the documented Skills interface. [OpenAI API Skills guide](https://developers.openai.com/api/docs/guides/tools-skills)
 
 ## Write with STAR
 

@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-OfferHunter 是一个开源的 Codex 简历技能，适合准备投递 AI 岗位的人。把旧简历、项目笔记和目标岗位的 JD 交给它，就可以从头写一份简历、调整栏目顺序，或重写某段经历。支持中文、英文和双语简历。
+OfferHunter 是一个适用于 Claude、ChatGPT、Codex、Grok 等 AI 助手的开源简历技能，适合准备投递 AI 岗位的人。把旧简历、项目笔记和目标岗位的 JD 交给它，就可以从头写一份简历、调整栏目顺序，或重写某段经历。支持中文、英文和双语简历。
 
 - **怎么写项目**：以 EC-Monica 电商 Agent 为例，展示如何交代业务背景、上线效果和本人负责的工作。[项目示例](skills/resume-engineering/references/examples.md)
 - **不同岗位怎么选经历**：用 100 条 BOSS 直聘岗位样本，了解应用开发、模型训练、评测、AI 产品等岗位分别关注什么。[岗位参考](skills/resume-engineering/references/ai-roles.md)
@@ -12,21 +12,38 @@ OfferHunter 是一个开源的 Codex 简历技能，适合准备投递 AI 岗位
 
 [快速开始](#快速开始) · [STAR 写法](#用-star-写项目经历) · [HTML 模板](#html-简历模板) · [常见问题](#常见问题)
 
-## 一句话安装
-
-```text
-请克隆 https://github.com/LofiSu/OfferHunter，并把 skills/resume-engineering 安装到当前 Codex 项目的 .agents/skills/。
-```
-
 ## 快速开始
 
+### Claude Code、Codex、Grok CLI
+
+在你的项目目录中执行：
+
 ```sh
-git clone https://github.com/LofiSu/OfferHunter.git /path/to/OfferHunter
-mkdir -p .agents/skills
-cp -R /path/to/OfferHunter/skills/resume-engineering .agents/skills/
+git clone https://github.com/LofiSu/OfferHunter.git
 ```
 
-在该项目中调用 `$resume-engineering`，附上旧简历或项目笔记。有目标 JD 时一并提供。
+按你使用的客户端选择一行。把整个技能目录复制过去，示例和模板也会一起安装。
+
+```sh
+# Claude Code
+mkdir -p .claude/skills && cp -R OfferHunter/skills/resume-engineering .claude/skills/
+
+# OpenAI Codex
+mkdir -p .agents/skills && cp -R OfferHunter/skills/resume-engineering .agents/skills/
+
+# Grok CLI
+mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skills/
+```
+
+在项目里开启新会话，请 Agent 使用 `resume-engineering`，并提供简历、项目笔记或目标 JD。其他支持 Agent Skills 的客户端可以把同一个目录放到它的技能目录。安装路径见[Claude Code 文档](https://code.claude.com/docs/en/skills)、[OpenAI 文档](https://developers.openai.com/api/reference/cli)及 [Grok CLI 文档](https://docs.x.ai/build/features/skills-plugins-marketplaces)。
+
+### ChatGPT、Claude、Grok 网页端和其他聊天助手
+
+上传或粘贴 [SKILL.md](skills/resume-engineering/SKILL.md)，再附上简历或项目笔记。有目标岗位时一并提供 JD。需要参考示例、结构或模板时，也把对应文件发给助手。可以直接这样说：
+
+> 请按附件里的 resume-engineering 规则，为我写一份 AI 岗位简历。经历里的每个项目都用 STAR 整理，结果按现有材料写。
+
+OpenAI API 集成也可以按官方文档把整个目录作为 Skill 使用。[OpenAI API Skills 指南](https://developers.openai.com/api/docs/guides/tools-skills)
 
 ## 用 STAR 写项目经历
 
