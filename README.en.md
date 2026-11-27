@@ -60,7 +60,9 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Single-column resume preview with work experience, internships, and independent AI projects](assets/resume-preview-project-ownership-en.png)
+![Single-column resume preview with a target role, internships, and four-line STAR project entries](assets/resume-preview-target-role-en.png)
+
+This example starts with internships. If you have full-time experience, reuse the employer and project markup to add a Work Experience section above it.
 
 Copy the code into `resume.html`, open it in a browser, and use the print menu to export an A4 PDF.
 
@@ -88,6 +90,7 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
     ul { margin: .25em 0; padding-inline-start: 1.2em; }
     li { margin: .2em 0; }
     a { color: inherit; }
+    .target-role { font-weight: 700; }
     .contact { overflow-wrap: anywhere; }
     .resume-company-heading { margin: .4em 0; }
     .resume-project { margin: .4em 0 .6em; }
@@ -103,19 +106,14 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
 <body>
   <header>
     <h1>Your Name</h1>
+    <p class="target-role">Target role: Agent Infrastructure and Applied ML</p>
     <p class="contact"><a href="https://github.com/username">github.com/username</a> |
       <a href="tel:+12025550101">+1 202 555 0101</a> |
       <a href="mailto:hello@example.com">hello@example.com</a></p>
     <p>University · Degree (2022–2026)</p>
-    <p><strong>Open Source &amp; Awards</strong> · Add one relevant contribution or award</p>
+    <p><strong>Open source</strong> · Project name | Contribution or community role</p>
   </header>
   <main>
-    <section>
-      <h2>Work Experience</h2>
-      <h3 class="resume-company-heading">Company | Role | Jul 2026–Present</h3>
-      <!-- Copy a resume-project block below when adding work projects. -->
-    </section>
-
     <section>
       <h2>Internships</h2>
       <h3 class="resume-company-heading">Company · E-commerce Team | AI Application Intern | Jun–Sep 2025 (example)</h3>

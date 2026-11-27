@@ -62,7 +62,9 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## HTML 简历模板
 
-![中文简历模板预览，黑白单栏，包含工作经历、实习经历与 AI 项目](assets/resume-preview-project-ownership-zh.png)
+![中文简历模板预览，包含求职方向、实习经历和按 STAR 撰写的 AI 项目](assets/resume-preview-target-role-zh.png)
+
+示例从实习经历开始。有正式工作经历时，可复制公司和项目的结构，在实习前加上「工作经历」。
 
 复制下面的代码，保存为 `resume.html`，在浏览器中打开。填写后可用浏览器的打印功能导出 A4 PDF。
 
@@ -90,6 +92,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
     ul { margin: .25em 0; padding-inline-start: 1.2em; }
     li { margin: .2em 0; }
     a { color: inherit; }
+    .target-role { font-weight: 700; }
     .contact { overflow-wrap: anywhere; }
     .resume-company-heading { margin: .4em 0; }
     .resume-project { margin: .4em 0 .6em; }
@@ -105,19 +108,14 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 <body>
   <header>
     <h1>候选人姓名</h1>
+    <p class="target-role">求职方向：Agent 基础设施与算法工程</p>
     <p class="contact"><a href="https://github.com/username">github.com/username</a> |
       <a href="tel:+8613800000000">+86 138 0000 0000</a> |
       <a href="mailto:hello@example.com">hello@example.com</a></p>
     <p>学校 · 专业（2022–2026）</p>
-    <p><strong>开源与奖项</strong> · 填写最相关的一项贡献或奖项</p>
+    <p><strong>开源贡献</strong> · 项目名称｜贡献内容或社区角色</p>
   </header>
   <main>
-    <section>
-      <h2>工作经历</h2>
-      <h3 class="resume-company-heading">公司｜岗位｜2026.07–至今</h3>
-      <!-- 有工作项目时，复制下方 resume-project。 -->
-    </section>
-
     <section>
       <h2>实习经历</h2>
       <h3 class="resume-company-heading">公司 · 电商团队｜AI 应用实习生｜2025.06–2025.09（示例）</h3>
