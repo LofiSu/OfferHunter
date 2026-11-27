@@ -30,10 +30,6 @@ Fictional notes — A support team piloted a knowledge assistant. The candidate 
 
 ## Real project example · EC-Monica, an e-commerce operations agent
 
-### How the resume entry evolved
-
-The earliest draft introduced A/B experiments, dashboards, and requirements documents under business context, then established end-to-end ownership. Later versions split the implementation into the agent workflow, tool registry, and context engineering. The current resume puts adoption and report turnaround before the technical details.
-
 ### STAR notes
 
 - **Situation** — E-commerce product, operations, and engineering teams needed to interpret experiments and dashboards, write reports, investigate metric changes, and analyze requirements.
