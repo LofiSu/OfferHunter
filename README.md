@@ -37,12 +37,12 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 简历里的每个项目都先拆成四部分，再写成正文。
 
-- **S · 情境**：谁遇到了什么问题？
-- **T · 任务**：项目要解决什么问题？用「我的职责」交代你负责的模块和交付范围。
+- **S · 背景**：谁遇到了什么问题？
+- **T · 我的职责**：你负责并完成了什么？
 - **A · 行动**：你具体做了什么？关键方案是怎么实现的？
 - **R · 结果**：最后交付了什么？有哪些上线数据、使用反馈或验证结果？
 
-正文里的每个项目都按「情境、任务、行动、结果」分四行写，一页简历也采用这个顺序。没有量化指标时，用实际交付、采纳情况或已完成的验证来写结果。有待确认的事实放在稿外。
+正文里的每个项目都按「背景、我的职责、行动、结果」分四行写，一页简历也采用这个顺序。没有量化指标时，用实际交付、采纳情况或已完成的验证来写结果。有待确认的事实放在稿外。
 
 ## 可以这样用
 
@@ -62,7 +62,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## HTML 简历模板
 
-![通用中文简历模板，包含求职方向、实习经历和项目经历](assets/resume-preview-generic-zh.png)
+![通用中文简历模板，包含求职方向、实习经历和项目经历](assets/resume-preview-background-zh.png)
 
 示例从实习经历开始。有正式工作经历时，可复制公司和项目的结构，在实习前加上「工作经历」。
 
@@ -128,10 +128,8 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
       <article class="resume-project">
         <h4 class="project-title">实习项目名称</h4>
         <ul class="star">
-          <li><strong>情境</strong> · 服务对象遇到了什么问题？</li>
-          <li><strong>任务</strong> · 项目要达成什么目标？
-            <div class="responsibility"><strong>我的职责</strong> · 我负责哪个模块，要交付什么？</div>
-          </li>
+          <li><strong>背景</strong> · 服务对象遇到了什么问题？</li>
+          <li class="responsibility"><strong>我的职责</strong> · 我负责并完成了什么？</li>
           <li><strong>行动</strong> · 我做了什么，采用了什么方法？</li>
           <li><strong>结果</strong> · 交付了什么，有哪些可核对的成效？</li>
         </ul>
@@ -143,10 +141,8 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
       <article class="resume-project">
         <h4 class="project-title">项目名称</h4>
         <ul class="star">
-          <li><strong>情境</strong> · 服务对象遇到了什么问题？</li>
-          <li><strong>任务</strong> · 项目要达成什么目标？
-            <div class="responsibility"><strong>我的职责</strong> · 我负责哪个模块，要交付什么？</div>
-          </li>
+          <li><strong>背景</strong> · 服务对象遇到了什么问题？</li>
+          <li class="responsibility"><strong>我的职责</strong> · 我负责并完成了什么？</li>
           <li><strong>行动</strong> · 我做了什么，采用了什么方法？</li>
           <li><strong>结果</strong> · 交付了什么，有哪些可核对的成效？</li>
         </ul>

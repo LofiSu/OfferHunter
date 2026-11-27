@@ -35,12 +35,12 @@ Start a new session and ask your agent to use `resume-engineering`.
 
 ## Write with STAR
 
-- **Situation** — Identify the users, the problem, and the constraints.
-- **Task** — State the project goal, then name what you owned.
+- **Background** — Identify the users, the problem, and the constraints.
+- **My responsibilities** — State what you owned and delivered.
 - **Action** — Use short headings for key contributions. Describe what you did, how it worked, and the tradeoffs that mattered.
 - **Result** — Attach verified outcomes to the relevant action. Attribute team outcomes to the team. When metrics are unavailable, describe a delivered capability, documented adoption, or a validated finding.
 
-Write each project as four labeled lines in this order: **Situation**, **Task**, **Action**, and **Result**. Keep the lines short for a one-page resume.
+Write each project as four labeled lines in this order: **Background**, **My responsibilities**, **Action**, and **Result**. Keep the lines short for a one-page resume.
 
 Use OfferHunter for research, training, applications, infrastructure, data, evaluation, safety, product, design, governance, and customer-facing deployment. The target role guides which experiences to highlight.
 
@@ -60,7 +60,7 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-generic-en.png)
+![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-background-en.png)
 
 This example starts with internships. If you have full-time experience, reuse the employer and project markup to add a Work Experience section above it.
 
@@ -126,10 +126,8 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
       <article class="resume-project">
         <h4 class="project-title">Internship project name</h4>
         <ul class="star">
-          <li><strong>Situation</strong> · Who needed help, and what was the problem?</li>
-          <li><strong>Task</strong> · What was the project meant to achieve?
-            <div class="responsibility"><strong>My responsibilities</strong> · Which part did I own, and what did I need to deliver?</div>
-          </li>
+          <li><strong>Background</strong> · Who needed help, and what was the problem?</li>
+          <li class="responsibility"><strong>My responsibilities</strong> · What work did I own and deliver?</li>
           <li><strong>Action</strong> · What did I do, and how?</li>
           <li><strong>Result</strong> · What shipped, and how was the outcome verified?</li>
         </ul>
@@ -141,10 +139,8 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
       <article class="resume-project">
         <h4 class="project-title">Project name</h4>
         <ul class="star">
-          <li><strong>Situation</strong> · Who needed help, and what was the problem?</li>
-          <li><strong>Task</strong> · What was the project meant to achieve?
-            <div class="responsibility"><strong>My responsibilities</strong> · Which part did I own, and what did I need to deliver?</div>
-          </li>
+          <li><strong>Background</strong> · Who needed help, and what was the problem?</li>
+          <li class="responsibility"><strong>My responsibilities</strong> · What work did I own and deliver?</li>
           <li><strong>Action</strong> · What did I do, and how?</li>
           <li><strong>Result</strong> · What shipped, and how was the outcome verified?</li>
         </ul>
@@ -165,7 +161,7 @@ Yes. Start with an existing resume or project notes and prioritize entries with 
 
 ### How do I use STAR on a one-page resume?
 
-Write four brief lines per project: Situation, Task, Action, and Result. Attribute team outcomes. A shipped capability, documented adoption, or validated finding can also show impact.
+Write four brief lines per project: Background, My responsibilities, Action, and Result. Attribute team outcomes. A shipped capability, documented adoption, or validated finding can also show impact.
 
 ### How do I export a resume to PDF?
 

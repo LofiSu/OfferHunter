@@ -3,7 +3,7 @@
 页首先交代求职方向和基本信息，正文按经历分组。每组先写公司或团队、岗位和时间，再列本人参与的项目。
 
 1. **页首**。姓名下先写目标岗位，再放一行联系方式和相关公开链接，随后用一行写学校、专业和毕业时间。开源身份、代表奖项或贡献高度相关时，可在页首加一行。熟练或资深候选人可把教育移到末尾。
-2. **工作经历**。按最近到最早排列。每段先写公司、岗位、时间，再在其下放本人参与的项目。项目标题写清交付对象或产品。每个项目按「情境、任务、行动、结果」写四行。行动写本人做过的关键工作，结果使用可核对的指标、交付或验证。篇幅紧张时缩短每行。
+2. **工作经历**。按最近到最早排列。每段先写公司、岗位、时间，再在其下放本人参与的项目。项目标题写清交付对象或产品。每个项目按「背景、我的职责、行动、结果」写四行。行动写本人做过的关键工作，结果使用可核对的指标、交付或验证。篇幅紧张时缩短每行。
 3. **实习经历**。沿用工作经历结构。简历主要靠实习经历说明能力时，可以省去空的工作栏目，直接从实习写起。相关的长期兼职和独立接单可按真实身份放在此处或单列。
 4. **AI 创业／独立项目**。放自己参与、且能说明目标岗位所需能力的项目，注明角色、交付阶段和可公开的演示或成果。避免与工作经历重复。
 5. **开源、研究与奖项**。页首用一行提示最相关的可信信号。需要展开时放到独立栏目，补上项目或论文名称、具体贡献、奖项和年份。技能栏按需添加，仅保留与目标工作直接相关且有素材支撑的能力。
@@ -16,4 +16,4 @@
 
 用户明确要 LaTeX 或 PDF 时，读取同目录 Skill 所链接的 LaTeX 模板。写入完整的可编译源文件，按正文或链接所在语境正确处理 LaTeX 特殊字符。用 XeLaTeX 编译，检查分页、溢出、中文字体、链接和文本复制。缺少编译环境时，交付源文件并说明 PDF 尚未生成。英文简历可将文档类改为 `article` 并翻译栏目名。
 
-For English resumes, use the same structure with **Work Experience**, **Internships**, **Independent AI Projects**, and optionally **Open Source, Research & Awards**. For each project, write four separate lines in this order: **Situation**, **Task**, **Action**, and **Result**.
+For English resumes, use the same structure with **Work Experience**, **Internships**, **Independent AI Projects**, and optionally **Open Source, Research & Awards**. For each project, write four separate lines in this order: **Background**, **My responsibilities**, **Action**, and **Result**.
