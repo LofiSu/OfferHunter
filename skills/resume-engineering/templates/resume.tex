@@ -1,0 +1,37 @@
+% Compile with XeLaTeX and a TeX distribution that includes ctex and Fandol.
+% For an English-only resume, use \documentclass[11pt,a4paper]{article} and translate the section headings.
+\documentclass[11pt,a4paper,scheme=plain,fontset=fandol]{ctexart}
+\usepackage[margin=19mm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlist[itemize]{leftmargin=*, topsep=3pt, itemsep=2pt, parsep=0pt}
+
+\begin{document}
+
+{\LARGE\bfseries 候选人姓名}\par
+\href{mailto:hello@example.com}{hello@example.com}
+\enspace\textbar\enspace \href{https://example.com}{作品集}\par
+学校 · 专业 · 毕业年份\par
+开源贡献或代表奖项（按需保留）
+
+\section*{工作经历}
+\textbf{公司 · 岗位} \hfill YYYY.MM--至今\par
+\textbf{项目名称 · 项目角色}
+\begin{itemize}
+  \item \textbf{背景}：服务对象、业务问题与目标。
+  \item \textbf{指标与效果}：写已验证的交付、采用或结果，说明统计口径。
+  \item \textbf{我的职责}：说明本人承担的交付范围，用关键机制与结果支撑。
+\end{itemize}
+
+\section*{实习经历}
+\textbf{公司 · 岗位} \hfill YYYY.MM--YYYY.MM\par
+用简短要点写相关项目与个人贡献。
+
+\section*{AI 创业／独立项目}
+\textbf{项目名称 · 项目角色} \hfill YYYY.MM--YYYY.MM\par
+写清面向的用户、已完成的功能和实际效果。
+
+\end{document}

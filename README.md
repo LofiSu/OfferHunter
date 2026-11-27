@@ -43,6 +43,12 @@ Skill 默认输出可复制的简历文本。项目级结果与个人职责各�
 
 查看 [EC-Monica 电商产运 Agent 的完整 STAR 改写](skills/resume-engineering/references/examples.md)。
 
+## 整份简历与 LaTeX
+
+可以从旧简历或项目笔记起草整份简历，也可以调整栏目顺序、压缩正文或只改一段经历。默认沿用「页首 → 工作经历 → 实习经历 → AI 创业／独立项目」的结构，按需呈现教育、开源和奖项。LaTeX 版采用简洁的黑白单栏排版。
+
+[Resume structure](skills/resume-engineering/references/resume-structure.md) · [LaTeX template](skills/resume-engineering/templates/resume.tex)
+
 ## 许可
 
 [MIT](LICENSE)

@@ -1,12 +1,17 @@
 ---
 name: resume-engineering
-description: Writes, reviews, and tailors resumes for AI-related technical and nontechnical roles using STAR. Use for AI research, engineering, infrastructure, data, evaluation, product, design, deployment, governance, and adjacent roles, or when users request AI 岗位简历、按 JD 定制、项目经历改写、转岗简历、一页压缩或 STAR 要点。
+description: Writes, reviews, and tailors resumes for AI-related technical and nontechnical roles using STAR. Use for AI research, engineering, infrastructure, data, evaluation, product, design, deployment, governance, and adjacent roles, or when users request AI 岗位整份简历、简历结构调整、LaTeX 简历、按 JD 定制、项目经历改写、转岗简历、一页压缩或 STAR 要点。
 license: MIT
 ---
 
 # AI 岗位简历写作
 
 把项目和工作素材压缩成招聘方能快速扫读、面试时能追问的项目经历。默认用用户要求的语言呈现。保留源材料中的英文技术名词，首次出现的内部缩写用通用术语交代。
+
+## 整份简历与结构重组
+
+- 用户要求从零写整份简历、改整份简历或调整栏目顺序时，读取 [整份简历结构](references/resume-structure.md)。先整理页首、工作、实习、独立项目和适用的其他栏目，再为其中的项目写 STAR。交付完整成稿。
+- 用户要求 LaTeX、PDF 或论文风格排版时，按结构说明选用 [单栏 LaTeX 模板](templates/resume.tex)。首选一页、黑白和清晰标题层级。排版要求本身无需把聊天正文转换成 LaTeX，除非用户需要源文件或 PDF。
 
 ## 从素材到简历
 
