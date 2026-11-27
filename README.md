@@ -56,6 +56,10 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 查看 [EC-Monica 电商产运 Agent 的完整 STAR 改写](skills/resume-engineering/references/examples.md)。
 
+## 按 BOSS 直聘 JD 投递
+
+把目标职位的 JD、链接或截图和旧简历一起发给助手。它会把最相关的经历往前放，逐个项目按「背景、我的职责、行动、结果」改写，再用其中一段真实经历写一条可以直接复制的打招呼语。也可以只改简历或只写打招呼语。[投递写法和示例](skills/resume-engineering/references/boss-application.md)
+
 ## 整份简历与 LaTeX
 
 先在页首写求职方向、联系方式和作品链接，再按实际经历安排工作、实习和项目。教育、开源和奖项可按需要放在页首或单独列出。LaTeX 模板采用黑白单栏。

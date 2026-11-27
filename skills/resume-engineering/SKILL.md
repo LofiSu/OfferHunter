@@ -1,6 +1,6 @@
 ---
 name: resume-engineering
-description: Writes, reviews, and tailors resumes for AI-related technical and nontechnical roles using STAR. Use for AI research, engineering, infrastructure, data, evaluation, product, design, deployment, governance, and adjacent roles, or when users request AI 岗位整份简历、简历结构调整、LaTeX 简历、按 JD 定制、项目经历改写、转岗简历、一页压缩或 STAR 要点。
+description: Writes, reviews, and tailors resumes for AI-related technical and nontechnical roles using STAR. Use for AI research, engineering, infrastructure, data, evaluation, product, design, deployment, governance, and adjacent roles, or when users request AI 岗位整份简历、简历结构调整、LaTeX 简历、按 BOSS 直聘 JD 改简历、BOSS 打招呼语、项目经历改写、转岗简历、一页压缩或 STAR 要点。
 license: MIT
 ---
 
@@ -30,6 +30,10 @@ Markdown 和 HTML 各用四项列表，LaTeX 用四个 `item`。英文用 **Back
 - 看目标岗位要交付什么，再选能证明这些能力的项目。同一段经历投不同岗位，可以突出不同模块，保留原有事实、技术和指标口径。只有 JD 时，围绕该岗位的工作提出最多三个取材问题。见 [AI 岗位参考](references/ai-roles.md)。
 - 写清动作和对象。比如「实现意图路由，按任务选择查数工具」比「负责智能化能力建设」更容易理解。技术流程要能读出各步骤的关系。版本对比只在能说明为什么改、本人负责什么时保留。
 - 素材没给出数字时，写实际交付、验收或复测发现。只做完原型或离线验证时，写明做到哪一步。素材对不上时，正文先用已确认的事实，把待补信息留在稿外。
+
+## 按 BOSS 直聘 JD 改简历和写打招呼语
+
+用户提供 BOSS 直聘职位链接、截图或 JD 正文时，按 [BOSS 直聘投递写法](references/boss-application.md)处理。用该岗位的实际职责挑选和改写经历，每个项目仍保留「背景、我的职责、行动、结果」。用户同时要简历和打招呼语时，先给简历正文，再给一条可直接复制的打招呼语。用户只要其中一项时，只交付该项。
 
 ## 交付
 

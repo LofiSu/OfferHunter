@@ -54,6 +54,10 @@ See how an AI thumbnail generator project becomes a copy-ready resume entry. [En
 
 See the [EC-Monica e-commerce operations agent case study](skills/resume-engineering/references/workflow.en.md) for a full STAR breakdown and resume-ready entry.
 
+## Tailor your application to a BOSS Zhipin job
+
+Share the posting, screenshot, or job description with your resume. The skill prioritizes the experience most relevant to the role, rewrites projects in four STAR lines, and can draft a short recruiter greeting based on the same evidence. You can request either output on its own. [Application guide and example](skills/resume-engineering/references/boss-application.md)
+
 ## Full resumes and LaTeX
 
 Draft a full resume from project notes, reorganize an existing resume, or rewrite one entry. The default structure is a compact header followed by work experience, internships, and independent AI projects. Education, open-source work, and awards appear where relevant. The LaTeX template uses a clean, single-column layout.
