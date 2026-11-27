@@ -56,7 +56,7 @@ See the [EC-Monica e-commerce operations agent case study](skills/resume-enginee
 
 ## Tailor your application to a BOSS Zhipin job
 
-Share the posting, screenshot, or job description with your resume. The skill prioritizes the experience most relevant to the role, rewrites projects in four STAR lines, and can draft a short recruiter greeting based on the same evidence. You can request either output on its own. [Application guide and example](skills/resume-engineering/references/boss-application.md)
+Share the posting, screenshot, or job description with your resume. The skill prioritizes the experience most relevant to the role, rewrites projects in four STAR lines, and can draft a recruiter greeting that names the work context, your responsibilities, and one concrete technical detail. You can request either output on its own. [Application guide and example](skills/resume-engineering/references/boss-application.md)
 
 ## Full resumes and LaTeX
 

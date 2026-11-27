@@ -58,7 +58,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## 按 BOSS 直聘 JD 投递
 
-把目标职位的 JD、链接或截图和旧简历一起发给助手。它会把最相关的经历往前放，逐个项目按「背景、我的职责、行动、结果」改写，再用其中一段真实经历写一条可以直接复制的打招呼语。也可以只改简历或只写打招呼语。[投递写法和示例](skills/resume-engineering/references/boss-application.md)
+把目标职位的 JD、链接或截图和旧简历一起发给助手。它会把最相关的经历往前放，逐个项目按「背景、我的职责、行动、结果」改写，重点项目写清你在哪段工作或实习中负责了什么、技术方案怎么实现、最后交付了什么。打招呼语也会用一段真实经历说明你与岗位的相关性。也可以只改简历或只写打招呼语。[投递写法和示例](skills/resume-engineering/references/boss-application.md)
 
 ## 整份简历与 LaTeX
 
