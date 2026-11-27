@@ -1,10 +1,10 @@
-# OfferHunter · Open-source AI Resume Writer and STAR Resume Skill
+# OfferHunter · Write Your Resume with STAR
 
 English | [简体中文](README.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Turn real project work into an AI resume you can explain in an interview.**
+**Build a resume from real experience you can speak to in an interview.**
 
 OfferHunter is an open-source writing skill for Claude, ChatGPT, Codex, Grok, and other AI assistants. Give it your project notes or existing resume to draft a full application, reorganize sections, or tailor a project entry to a job description. It supports English, Chinese, and bilingual drafts.
 
@@ -33,7 +33,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 Start a new session and ask your agent to use `resume-engineering`.
 
-**ChatGPT, Claude, and Grok on the web** — Attach or paste [SKILL.md](skills/resume-engineering/SKILL.md) with your resume or project notes and, if available, the target job description. For API integrations, see the [OpenAI Skills guide](https://developers.openai.com/api/docs/guides/tools-skills).
+**ChatGPT, Claude, and Grok on the web** — Attach or paste [SKILL.md](skills/resume-engineering/SKILL.md) with your resume or project notes and, if available, the target job description.
 
 ## Write with STAR
 

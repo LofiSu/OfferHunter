@@ -1,10 +1,10 @@
-# OfferHunter｜用 STAR 法则写 AI 求职简历
+# OfferHunter｜用 STAR 法则写求职简历
 
 简体中文 | [English](README.en.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**用真实项目写一份能经得起追问的 AI 求职简历。**
+**用真实经历写一份经得起追问的求职简历**
 
 OfferHunter 是一个开源的简历写作技能。把项目笔记或旧简历交给 Claude、ChatGPT、Codex、Grok 等助手，就能从头写一份简历、调整栏目顺序，或按岗位描述改写项目经历。支持中文、英文和双语稿。
 
@@ -33,7 +33,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 开启新会话，请助手使用 `resume-engineering`。
 
-**ChatGPT、Claude、Grok 网页端**：上传或粘贴 [SKILL.md](skills/resume-engineering/SKILL.md)，附上简历或项目笔记。有目标 JD 时一并提供。使用 OpenAI API 可参考[官方指南](https://developers.openai.com/api/docs/guides/tools-skills)。
+**ChatGPT、Claude、Grok 网页端**：上传或粘贴 [SKILL.md](skills/resume-engineering/SKILL.md)，附上简历或项目笔记。有目标 JD 时一并提供。
 
 ## 用 STAR 写项目经历
 
