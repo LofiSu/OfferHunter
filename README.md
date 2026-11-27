@@ -62,7 +62,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## HTML 简历模板
 
-![中文简历模板预览，包含求职方向、实习经历和按 STAR 撰写的 AI 项目](assets/resume-preview-responsibilities-zh.png)
+![通用中文简历模板，包含求职方向、实习经历和项目经历](assets/resume-preview-generic-zh.png)
 
 示例从实习经历开始。有正式工作经历时，可复制公司和项目的结构，在实习前加上「工作经历」。
 
@@ -117,48 +117,38 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
   <header>
     <h1>候选人姓名</h1>
     <p>手机号 ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
-    <p class="profile">Agent 基础设施与算法工程｜求职方向</p>
+    <p class="profile">求职方向</p>
     <p class="open-source"><a href="https://github.com/username">github.com/username</a> ｜ 项目名 · 社区角色或代表性贡献</p>
-    <p>学校｜专业与培养项目｜2022–2026</p>
+    <p>学校专业</p>
   </header>
   <main>
     <section>
       <h2 class="section-title">实习经历</h2>
-      <h3 class="employer">公司 · 电商团队｜AI 应用实习生｜2025.06–2025.09（示例）</h3>
+      <h3 class="employer">公司或团队｜岗位｜起止时间</h3>
       <article class="resume-project">
-        <h4 class="project-title">EC-Monica 电商产运 Agent</h4>
+        <h4 class="project-title">实习项目名称</h4>
         <ul class="star">
-          <li><strong>情境</strong> · 电商团队需要查数、分析指标波动并撰写报告。</li>
-          <li><strong>任务</strong> · 搭建电商产运 Agent。
-            <div class="responsibility"><strong>我的职责</strong> · 担任项目负责人，负责方案设计、工具编排和上线交付。</div>
+          <li><strong>情境</strong> · 服务对象遇到了什么问题？</li>
+          <li><strong>任务</strong> · 项目要达成什么目标？
+            <div class="responsibility"><strong>我的职责</strong> · 我负责哪个模块，要交付什么？</div>
           </li>
-          <li class="star-action"><strong>行动</strong>
-            <ul>
-              <li><strong>Agent 工作流</strong> · 实现意图识别和工具路由，失败时支持超时重试和降级。</li>
-              <li><strong>上下文工程</strong> · 用 Python 计算同比、环比，再用运营模板指导报告生成。</li>
-            </ul>
-          </li>
-          <li><strong>结果</strong> · 月均调用 600+ 次。单次报告人工编写需 1–2 小时，使用 Agent 生成需 5–15 分钟。</li>
+          <li><strong>行动</strong> · 我做了什么，采用了什么方法？</li>
+          <li><strong>结果</strong> · 交付了什么，有哪些可核对的成效？</li>
         </ul>
       </article>
     </section>
 
     <section>
-      <h2 class="section-title">AI 创业／独立项目</h2>
+      <h2 class="section-title">项目经历</h2>
       <article class="resume-project">
-        <h4 class="project-title">AI 封面图生成工具</h4>
+        <h4 class="project-title">项目名称</h4>
         <ul class="star">
-          <li><strong>情境</strong> · 多平台创作者需要符合各平台尺寸的封面。</li>
-          <li><strong>任务</strong> · 让创作者选平台、上传素材后即可生成封面。
-            <div class="responsibility"><strong>我的职责</strong> · 负责素材输入、封面生成流程和订阅功能。</div>
+          <li><strong>情境</strong> · 服务对象遇到了什么问题？</li>
+          <li><strong>任务</strong> · 项目要达成什么目标？
+            <div class="responsibility"><strong>我的职责</strong> · 我负责哪个模块，要交付什么？</div>
           </li>
-          <li class="star-action"><strong>行动</strong>
-            <ul>
-              <li><strong>封面生成</strong> · 用 Next.js 实现平台尺寸预设、主体上传和风格参考图输入，按平台和风格组织提示词并调用图像生成 API。</li>
-              <li><strong>订阅功能</strong> · 实现免费额度和订阅，为订阅用户提供批量生成与高清导出。</li>
-            </ul>
-          </li>
-          <li><strong>结果</strong> · 已支持多平台封面预览和下载，订阅用户可批量生成和导出高清图。</li>
+          <li><strong>行动</strong> · 我做了什么，采用了什么方法？</li>
+          <li><strong>结果</strong> · 交付了什么，有哪些可核对的成效？</li>
         </ul>
       </article>
     </section>

@@ -60,7 +60,7 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Single-column resume preview with a target role, internships, and four-line STAR project entries](assets/resume-preview-responsibilities-en.png)
+![Generic single-column resume with a target role, internships, and project experience](assets/resume-preview-generic-en.png)
 
 This example starts with internships. If you have full-time experience, reuse the employer and project markup to add a Work Experience section above it.
 
@@ -115,48 +115,38 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
   <header>
     <h1>Your Name</h1>
     <p>Phone number ｜ <a href="mailto:hello@example.com">hello@example.com</a></p>
-    <p class="profile">Target role: Agent Infrastructure and Applied ML</p>
+    <p class="profile">Target role</p>
     <p class="open-source"><a href="https://github.com/username">github.com/username</a> ｜ Project name · Community role or selected contribution</p>
-    <p>University | Degree and program | 2022–2026</p>
+    <p>School and major</p>
   </header>
   <main>
     <section>
       <h2 class="section-title">Internships</h2>
-      <h3 class="employer">Company · E-commerce Team | AI Application Intern | Jun–Sep 2025 (example)</h3>
+      <h3 class="employer">Company or team | Role | Dates</h3>
       <article class="resume-project">
-        <h4 class="project-title">EC-Monica · E-commerce Operations Agent</h4>
+        <h4 class="project-title">Internship project name</h4>
         <ul class="star">
-          <li><strong>Situation</strong> · E-commerce teams needed to query data, investigate metric changes, and write reports.</li>
-          <li><strong>Task</strong> · Build an e-commerce operations agent.
-            <div class="responsibility"><strong>My responsibilities</strong> · Project owner responsible for design, tool orchestration, and launch.</div>
+          <li><strong>Situation</strong> · Who needed help, and what was the problem?</li>
+          <li><strong>Task</strong> · What was the project meant to achieve?
+            <div class="responsibility"><strong>My responsibilities</strong> · Which part did I own, and what did I need to deliver?</div>
           </li>
-          <li class="star-action"><strong>Action</strong>
-            <ul>
-              <li><strong>Agent workflow</strong> · Implemented intent routing and tool execution with retries and fallback.</li>
-              <li><strong>Context engineering</strong> · Calculated year-over-year and period-over-period changes in Python and used operations templates to guide reports.</li>
-            </ul>
-          </li>
-          <li><strong>Result</strong> · Averaged 600+ calls per month. Reports took 1–2 hours to write manually and 5–15 minutes to generate.</li>
+          <li><strong>Action</strong> · What did I do, and how?</li>
+          <li><strong>Result</strong> · What shipped, and how was the outcome verified?</li>
         </ul>
       </article>
     </section>
 
     <section>
-      <h2 class="section-title">Independent AI Projects</h2>
+      <h2 class="section-title">Project Experience</h2>
       <article class="resume-project">
-        <h4 class="project-title">AI Thumbnail Generator</h4>
+        <h4 class="project-title">Project name</h4>
         <ul class="star">
-          <li><strong>Situation</strong> · Creators needed thumbnails in different sizes for different platforms.</li>
-          <li><strong>Task</strong> · Let creators select a platform and generate a thumbnail from their assets.
-            <div class="responsibility"><strong>My responsibilities</strong> · Owned asset inputs, the generation workflow, and subscriptions.</div>
+          <li><strong>Situation</strong> · Who needed help, and what was the problem?</li>
+          <li><strong>Task</strong> · What was the project meant to achieve?
+            <div class="responsibility"><strong>My responsibilities</strong> · Which part did I own, and what did I need to deliver?</div>
           </li>
-          <li class="star-action"><strong>Action</strong>
-            <ul>
-              <li><strong>Thumbnail generation</strong> · Built platform presets and asset inputs in Next.js, then called the image generation API with platform and style prompts.</li>
-              <li><strong>Subscriptions</strong> · Implemented free usage and subscriptions with batch generation and high-resolution export for subscribers.</li>
-            </ul>
-          </li>
-          <li><strong>Result</strong> · Shipped multi-platform preview and download, with batch generation and high-resolution export for subscribers.</li>
+          <li><strong>Action</strong> · What did I do, and how?</li>
+          <li><strong>Result</strong> · What shipped, and how was the outcome verified?</li>
         </ul>
       </article>
     </section>
