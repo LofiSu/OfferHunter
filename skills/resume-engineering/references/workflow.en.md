@@ -21,21 +21,7 @@
 
 The source describes shipped capabilities and provides no measured change in click-through rate.
 
-## Fictional practice example
-
-Fictional notes — A support team piloted a knowledge assistant. The candidate selected 60 questions from historical tickets, grouped failures, and retested two versions. They also interviewed five agents and defined a citation-confirmation acceptance criterion. Engineers implemented the workflow. The team completed an internal pilot.
-
-- **AI evaluation · Offline regression** — Curated 60 evaluation questions from historical support tickets, classified failures by citation errors, incomplete answers, and cases requiring refusal, and retested two assistant versions.
-- **AI product · Workflow validation** — Interviewed five support agents and defined citation confirmation as an acceptance criterion for the assistant workflow. The team completed an internal pilot.
-
 ## Real project example · EC-Monica, an e-commerce operations agent
-
-### STAR notes
-
-- **Situation** — E-commerce product, operations, and engineering teams needed to interpret experiments and dashboards, write reports, investigate metric changes, and analyze requirements.
-- **Task** — Own EC-Monica from initial design through launch.
-- **Action** — Route requests by intent, register tools through configuration, calculate year-over-year and period-over-period metrics in Python, and synthesize intermediate findings into reports. Add tool failure handling and use examples, summaries, and a sliding window to guide multi-turn analysis.
-- **Result** — The resume records 600+ calls per month on average. About 55% were reporting tasks and 45% were requirements or attribution tasks. A single report took 1–2 hours to write manually and 5–15 minutes to generate with the agent. The source does not specify the observation period or sample size.
 
 ### Resume-ready entry
 
@@ -48,4 +34,9 @@ Fictional notes — A support team piloted a knowledge assistant. The candidate 
   - **Tool registry** — Registered function schemas through configuration across user behavior, GMV, acquisition channels, and product analysis. Added analysis tools by extending the configuration.
   - **Context engineering** — Calculated year-over-year and period-over-period metrics in Python, added report examples and operations templates, and carried forward key findings with summaries and a sliding window.
 
-For AI application engineering, retain the three implementation headings. For AI product roles, lead with users, task mix, and report turnaround, and compress the implementation into one bullet.
+### STAR notes
+
+- **Situation** — E-commerce product, operations, and engineering teams needed to interpret experiments and dashboards, write reports, investigate metric changes, and analyze requirements.
+- **Task** — Own EC-Monica from initial design through launch.
+- **Action** — Route requests by intent, register tools through configuration, calculate year-over-year and period-over-period metrics in Python, and synthesize intermediate findings into reports. Add tool failure handling and use examples, summaries, and a sliding window to guide multi-turn analysis.
+- **Result** — The resume records 600+ calls per month on average. About 55% were reporting tasks and 45% were requirements or attribution tasks. A single report took 1–2 hours to write manually and 5–15 minutes to generate with the agent. The source does not specify the observation period or sample size.
