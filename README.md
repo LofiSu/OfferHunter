@@ -102,11 +102,14 @@ OpenAI API 集成也可以按官方文档把整个目录作为 Skill 使用。[O
     ul { margin: .25em 0; padding-inline-start: 1.2em; }
     li { margin: .2em 0; }
     a { color: inherit; }
-    time { white-space: nowrap; }
-    .entry-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25em 1em; }
+    .contact { overflow-wrap: anywhere; }
+    .resume-company-heading { margin: .4em 0; }
+    .resume-project { margin: .4em 0 .6em; }
+    .resume-project h4 { margin: .2em 0; font-size: 11pt; }
+    ul ul { list-style-type: circle; }
     @media print {
       body { max-width: none; margin: 0; padding: 0; }
-      h2, h3 { break-after: avoid; }
+      h2, h3, h4 { break-after: avoid; }
       li { break-inside: avoid; }
     }
   </style>
@@ -114,52 +117,51 @@ OpenAI API 集成也可以按官方文档把整个目录作为 Skill 使用。[O
 <body>
   <header>
     <h1>候选人姓名</h1>
-    <p><a href="mailto:hello@example.com">hello@example.com</a> ·
-       <a href="https://example.com">作品集</a></p>
-    <p>学校 · 专业 · 毕业年份</p>
-    <p>开源贡献或代表奖项（可选）</p>
+    <p class="contact"><a href="https://github.com/username">github.com/username</a> |
+      <a href="tel:+8613800000000">+86 138 0000 0000</a> |
+      <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p>学校 · 专业（2022–2026）</p>
+    <p><strong>开源与奖项</strong> · 填写最相关的一项贡献或奖项</p>
   </header>
   <main>
     <section>
       <h2>工作经历</h2>
-      <div class="entry-heading">
-        <h3>公司 · 岗位</h3>
-        <span><time datetime="2025-01">2025.01</time>–<time datetime="2025-12">2025.12</time></span>
-      </div>
-      <p><strong>项目名称 · 角色</strong></p>
-      <ul>
-        <li><strong>背景与目标</strong> — 为【用户】解决【问题】，负责【交付目标】。</li>
-        <li><strong>指标与效果</strong> — 上线后【可核对的使用或业务结果】。</li>
-        <li><strong>我的职责</strong>
-          <ul><li><strong>【模块名】</strong> — 实现【关键流程】，通过【具体做法】解决【约束】。</li></ul>
-        </li>
-      </ul>
+      <h3 class="resume-company-heading">公司｜岗位｜2026.07–至今</h3>
+      <!-- 有工作项目时，复制下方 resume-project。 -->
     </section>
+
     <section>
       <h2>实习经历</h2>
-      <div class="entry-heading">
-        <h3>公司 · 岗位</h3>
-        <span><time datetime="2025-01">2025.01</time>–<time datetime="2025-12">2025.12</time></span>
-      </div>
-      <p><strong>项目名称 · 角色</strong></p>
-      <ul>
-        <li><strong>背景与目标</strong> — 团队需要【目标】，我负责【具体模块】。</li>
-        <li><strong>指标与效果</strong> — 模块已【上线、验收或验证结果】。</li>
-        <li><strong>我的职责</strong>
-          <ul><li><strong>【模块名】</strong> — 完成【关键动作】并交付【功能】。</li></ul>
-        </li>
-      </ul>
+      <h3 class="resume-company-heading">公司 · 电商团队｜AI 应用实习生｜2025.06–2025.09（示例）</h3>
+      <article class="resume-project">
+        <h4>EC-Monica 电商产运 Agent</h4>
+        <ul>
+          <li><strong>背景</strong> · 产品、运营和研发需要查数、写报告和分析业务波动。作为项目负责人，我从零搭建了电商产运 Agent。</li>
+          <li><strong>指标与效果</strong> · 上线后月均调用 600+ 次。单次分析报告原先人工编写需 1–2 小时，使用 Agent 生成需 5–15 分钟。</li>
+          <li><strong>我的职责</strong>
+            <ul>
+            <li><strong>Agent 工作流</strong> · 根据用户意图选择工具或直接生成，逐轮整理查询结论并汇总成报告。</li>
+            <li><strong>上下文工程</strong> · 将同比、环比数据和业务范文加入模型上下文，用摘要和滑动窗口保留前轮结论。</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
     </section>
+
     <section>
       <h2>AI 创业／独立项目</h2>
-      <h3>项目名称 · 角色</h3>
-      <ul>
-        <li><strong>背景与目标</strong> — 面向【用户场景】，负责【产品或功能目标】。</li>
-        <li><strong>指标与效果</strong> — 已交付【功能】，在【范围】完成验证。</li>
-        <li><strong>我的职责</strong>
-          <ul><li><strong>【核心功能】</strong> — 用【具体方法】实现【用户流程】。</li></ul>
-        </li>
-      </ul>
+      <article class="resume-project">
+        <h4>AI 封面图生成工具</h4>
+        <ul>
+          <li><strong>背景</strong> · 为多平台创作者搭建封面图工具，让他们提交素材后生成符合平台尺寸的封面。</li>
+          <li><strong>指标与效果</strong> · 已支持多平台封面预览和下载，订阅用户可以批量生成并导出高清图。</li>
+          <li><strong>我的职责</strong>
+            <ul>
+            <li><strong>生成流程</strong> · 用 Next.js 实现平台尺寸预设和素材输入，按平台与风格组织提示词并调用图像生成 API。</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
     </section>
   </main>
 </body>

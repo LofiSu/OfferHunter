@@ -100,11 +100,14 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
     ul { margin: .25em 0; padding-inline-start: 1.2em; }
     li { margin: .2em 0; }
     a { color: inherit; }
-    time { white-space: nowrap; }
-    .entry-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25em 1em; }
+    .contact { overflow-wrap: anywhere; }
+    .resume-company-heading { margin: .4em 0; }
+    .resume-project { margin: .4em 0 .6em; }
+    .resume-project h4 { margin: .2em 0; font-size: 11pt; }
+    ul ul { list-style-type: circle; }
     @media print {
       body { max-width: none; margin: 0; padding: 0; }
-      h2, h3 { break-after: avoid; }
+      h2, h3, h4 { break-after: avoid; }
       li { break-inside: avoid; }
     }
   </style>
@@ -112,52 +115,51 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
 <body>
   <header>
     <h1>Your Name</h1>
-    <p><a href="mailto:hello@example.com">hello@example.com</a> ·
-       <a href="https://example.com">Portfolio</a></p>
-    <p>University · Degree · Graduation year</p>
-    <p>Selected open-source contribution or award</p>
+    <p class="contact"><a href="https://github.com/username">github.com/username</a> |
+      <a href="tel:+12025550101">+1 202 555 0101</a> |
+      <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p>University · Degree (2022–2026)</p>
+    <p><strong>Open Source &amp; Awards</strong> · Add one relevant contribution or award</p>
   </header>
   <main>
     <section>
       <h2>Work Experience</h2>
-      <div class="entry-heading">
-        <h3>Company · Role</h3>
-        <span><time datetime="2025-01">2025.01</time>–<time datetime="2025-12">2025.12</time></span>
-      </div>
-      <p><strong>Project · Your role</strong></p>
-      <ul>
-        <li><strong>Context and goal</strong> — Addressed [problem] for [users] and owned [deliverable].</li>
-        <li><strong>Impact</strong> — After launch, [verified usage or business outcome].</li>
-        <li><strong>My contributions</strong>
-          <ul><li><strong>[Module]</strong> — Implemented [workflow] using [method] to address [constraint].</li></ul>
-        </li>
-      </ul>
+      <h3 class="resume-company-heading">Company | Role | Jul 2026–Present</h3>
+      <!-- Copy a resume-project block below when adding work projects. -->
     </section>
+
     <section>
       <h2>Internships</h2>
-      <div class="entry-heading">
-        <h3>Company · Role</h3>
-        <span><time datetime="2025-01">2025.01</time>–<time datetime="2025-12">2025.12</time></span>
-      </div>
-      <p><strong>Project · Your role</strong></p>
-      <ul>
-        <li><strong>Context and goal</strong> — The team needed [goal]. I owned [module].</li>
-        <li><strong>Impact</strong> — The module [shipped, passed acceptance, or produced a finding].</li>
-        <li><strong>My contributions</strong>
-          <ul><li><strong>[Module]</strong> — Completed [action] and delivered [feature].</li></ul>
-        </li>
-      </ul>
+      <h3 class="resume-company-heading">Company · E-commerce Team | AI Application Intern | Jun–Sep 2025 (example)</h3>
+      <article class="resume-project">
+        <h4>EC-Monica · E-commerce Operations Agent</h4>
+        <ul>
+          <li><strong>Context</strong> · Product, operations, and engineering teams needed to query data, write reports, and investigate metric changes. I owned the agent from design through launch.</li>
+          <li><strong>Impact</strong> · The agent averaged 600+ calls per month. A report took 1–2 hours to write manually and 5–15 minutes to generate with the agent.</li>
+          <li><strong>My contributions</strong>
+            <ul>
+            <li><strong>Agent workflow</strong> · Routed requests to tools or direct generation and assembled intermediate findings into a report.</li>
+            <li><strong>Context engineering</strong> · Added year-over-year and period-over-period metrics and report examples. Carried findings forward with summaries and a sliding window.</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
     </section>
+
     <section>
       <h2>Independent AI Projects</h2>
-      <h3>Project · Your role</h3>
-      <ul>
-        <li><strong>Context and goal</strong> — Built [product capability] for [users and scenario].</li>
-        <li><strong>Impact</strong> — Delivered [feature] and validated it in [scope].</li>
-        <li><strong>My contributions</strong>
-          <ul><li><strong>[Core feature]</strong> — Implemented [user flow] using [approach].</li></ul>
-        </li>
-      </ul>
+      <article class="resume-project">
+        <h4>AI Thumbnail Generator</h4>
+        <ul>
+          <li><strong>Context</strong> · Built a thumbnail tool for creators who publish across platforms and need different image sizes.</li>
+          <li><strong>Impact</strong> · Shipped preview and download for multiple platform sizes, plus batch generation and high-resolution export for subscribers.</li>
+          <li><strong>My contributions</strong>
+            <ul>
+            <li><strong>Image generation</strong> · Built platform presets and asset inputs in Next.js, then integrated an image generation API with platform and style prompts.</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
     </section>
   </main>
 </body>
