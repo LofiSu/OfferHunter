@@ -38,7 +38,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 简历里的每个项目都先拆成四部分，再写成正文。
 
 - **S · 情境**：谁遇到了什么问题？
-- **T · 任务**：项目要解决什么问题？你负责哪一部分？
+- **T · 任务**：项目要解决什么问题？用「我的职责」交代你负责的模块和交付范围。
 - **A · 行动**：你具体做了什么？关键方案是怎么实现的？
 - **R · 结果**：最后交付了什么？有哪些上线数据、使用反馈或验证结果？
 
@@ -62,7 +62,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ## HTML 简历模板
 
-![中文简历模板预览，黑白单栏，包含工作经历、实习经历与 AI 项目](assets/resume-preview-star-zh.png)
+![中文简历模板预览，黑白单栏，包含工作经历、实习经历与 AI 项目](assets/resume-preview-star-role-zh.png)
 
 复制下面的代码，保存为 `resume.html`，在浏览器中打开。填写后可用浏览器的打印功能导出 A4 PDF。
 
@@ -125,7 +125,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
         <h4>EC-Monica 电商产运 Agent</h4>
         <ul>
           <li><strong>情境</strong> · 电商团队需要查数、分析指标波动并撰写报告。</li>
-          <li><strong>任务</strong> · 从零搭建并上线电商产运 Agent。</li>
+          <li><strong>任务</strong> · 搭建电商产运 Agent。<strong>我的职责</strong>：作为项目负责人，从零完成方案设计和上线。</li>
           <li><strong>行动</strong> · 实现意图路由与工具调用，计算同比和环比并汇总报告。</li>
           <li><strong>结果</strong> · 月均调用 600+ 次。单次报告人工编写需 1–2 小时，使用 Agent 生成需 5–15 分钟。</li>
         </ul>
@@ -138,7 +138,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
         <h4>AI 封面图生成工具</h4>
         <ul>
           <li><strong>情境</strong> · 多平台创作者需要符合各平台尺寸的封面。</li>
-          <li><strong>任务</strong> · 搭建可上传素材并生成封面的工具。</li>
+          <li><strong>任务</strong> · 搭建封面生成工具。<strong>我的职责</strong>：负责素材输入、生成流程和订阅功能。</li>
           <li><strong>行动</strong> · 用 Next.js 实现尺寸预设和素材输入，接入图像生成 API。</li>
           <li><strong>结果</strong> · 已支持多平台封面预览和下载，订阅用户可批量生成和导出高清图。</li>
         </ul>

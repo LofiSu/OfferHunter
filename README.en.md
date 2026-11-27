@@ -36,7 +36,7 @@ Start a new session and ask your agent to use `resume-engineering`.
 ## Write with STAR
 
 - **Situation** — Identify the users, the problem, and the constraints.
-- **Task** — State the goal and the part you owned.
+- **Task** — State the project goal, then name what you owned.
 - **Action** — Use short headings for key contributions. Describe what you did, how it worked, and the tradeoffs that mattered.
 - **Result** — Attach verified outcomes to the relevant action. Attribute team outcomes to the team. When metrics are unavailable, describe a delivered capability, documented adoption, or a validated finding.
 
@@ -60,7 +60,7 @@ Draft a full resume from project notes, reorganize an existing resume, or rewrit
 
 ## HTML Resume Template
 
-![Single-column resume preview with work experience, internships, and independent AI projects](assets/resume-preview-star-en.png)
+![Single-column resume preview with work experience, internships, and independent AI projects](assets/resume-preview-star-role-en.png)
 
 Copy the code into `resume.html`, open it in a browser, and use the print menu to export an A4 PDF.
 
@@ -123,7 +123,7 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
         <h4>EC-Monica · E-commerce Operations Agent</h4>
         <ul>
           <li><strong>Situation</strong> · E-commerce teams needed to query data, investigate metric changes, and write reports.</li>
-          <li><strong>Task</strong> · Own the agent from design through launch.</li>
+          <li><strong>Task</strong> · Build an e-commerce operations agent. <strong>My role</strong>: project owner from design through launch.</li>
           <li><strong>Action</strong> · Built intent routing and tool calls to calculate metrics and synthesize reports.</li>
           <li><strong>Result</strong> · Averaged 600+ calls per month. Reports took 1–2 hours to write manually and 5–15 minutes to generate.</li>
         </ul>
@@ -136,7 +136,7 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
         <h4>AI Thumbnail Generator</h4>
         <ul>
           <li><strong>Situation</strong> · Creators needed thumbnails in different sizes for different platforms.</li>
-          <li><strong>Task</strong> · Build a tool that turns uploaded assets into platform-ready thumbnails.</li>
+          <li><strong>Task</strong> · Build a thumbnail generator. <strong>My role</strong>: own the asset inputs, generation workflow, and subscription features.</li>
           <li><strong>Action</strong> · Built platform presets and asset inputs in Next.js and integrated an image generation API.</li>
           <li><strong>Result</strong> · Shipped multi-platform preview and download, with batch generation and high-resolution export for subscribers.</li>
         </ul>
