@@ -6,7 +6,22 @@
 4. Keep metrics tied to the known baseline, unit, measurement window, and environment. Distinguish offline evaluation, pilot outcomes, and production results. Attribute team results explicitly. Use qualitative evidence when a number is unavailable, and use causal wording only when the evidence supports it.
 5. Deliver the copy-ready text first. Keep unresolved facts outside the resume and mention up to three only when they affect the wording. Remove confidential details from public-facing drafts.
 
-## Example
+## Example adapted from a real project
+
+- **Situation** — Creators publishing across multiple platforms needed thumbnails in different sizes.
+- **Task** — Build a tool that takes creator assets and a platform choice through to preview and download.
+- **Action** — Build platform presets and subject and style-reference inputs in Next.js. Turn platform context and style keywords into prompts and integrate an image generation API.
+- **Result** — The tool supports thumbnail generation and download in multiple platform sizes. Subscribers can generate in batches and export high-resolution images.
+
+**AI Thumbnail Generator**
+
+- **Context and goal** — Built a thumbnail generation workflow for creators publishing across multiple platforms, from selecting a platform size and submitting assets to generating a cover.
+- **My contributions · Image generation** — Implemented platform presets, subject uploads, and style-reference inputs in Next.js. Combined platform context and style keywords into prompts and integrated an image generation API for previewing and downloading thumbnails in multiple sizes.
+- **My contributions · Subscription features** — Built a free usage allowance and a paid subscription flow with batch generation and high-resolution export.
+
+The source describes shipped capabilities and provides no measured change in click-through rate.
+
+## Fictional practice example
 
 Fictional notes — A support team piloted a knowledge assistant. The candidate selected 60 questions from historical tickets, grouped failures, and retested two versions. They also interviewed five agents and defined a citation-confirmation acceptance criterion. Engineers implemented the workflow. The team completed an internal pilot.
 
