@@ -40,7 +40,7 @@ Start a new session and ask your agent to use `resume-engineering`.
 - **Action** — Use short headings for key contributions. Describe what you did, how it worked, and the tradeoffs that mattered.
 - **Result** — Attach verified outcomes to the relevant action. Attribute team outcomes to the team. When metrics are unavailable, describe a delivered capability, documented adoption, or a validated finding.
 
-A project entry can open with **Context and goal**, then list **My contributions**, with outcomes attached where they can be attributed. For a one-page resume, compress those elements into a bullet.
+Write each project as four labeled lines in this order: **Situation**, **Task**, **Action**, and **Result**. Keep the lines short for a one-page resume.
 
 Use OfferHunter for research, training, applications, infrastructure, data, evaluation, safety, product, design, governance, and customer-facing deployment. The target role guides which experiences to highlight.
 
@@ -122,14 +122,10 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
       <article class="resume-project">
         <h4>EC-Monica · E-commerce Operations Agent</h4>
         <ul>
-          <li><strong>Context</strong> · Product, operations, and engineering teams needed to query data, write reports, and investigate metric changes. I owned the agent from design through launch.</li>
-          <li><strong>Impact</strong> · The agent averaged 600+ calls per month. A report took 1–2 hours to write manually and 5–15 minutes to generate with the agent.</li>
-          <li><strong>My contributions</strong>
-            <ul>
-            <li><strong>Agent workflow</strong> · Routed requests to tools or direct generation and assembled intermediate findings into a report.</li>
-            <li><strong>Context engineering</strong> · Added year-over-year and period-over-period metrics and report examples. Carried findings forward with summaries and a sliding window.</li>
-            </ul>
-          </li>
+          <li><strong>Situation</strong> · E-commerce teams needed to query data, investigate metric changes, and write reports.</li>
+          <li><strong>Task</strong> · Own the agent from design through launch.</li>
+          <li><strong>Action</strong> · Built intent routing and tool calls to calculate metrics and synthesize reports.</li>
+          <li><strong>Result</strong> · Averaged 600+ calls per month. Reports took 1–2 hours to write manually and 5–15 minutes to generate.</li>
         </ul>
       </article>
     </section>
@@ -139,13 +135,10 @@ Copy the code into `resume.html`, open it in a browser, and use the print menu t
       <article class="resume-project">
         <h4>AI Thumbnail Generator</h4>
         <ul>
-          <li><strong>Context</strong> · Built a thumbnail tool for creators who publish across platforms and need different image sizes.</li>
-          <li><strong>Impact</strong> · Shipped preview and download for multiple platform sizes, plus batch generation and high-resolution export for subscribers.</li>
-          <li><strong>My contributions</strong>
-            <ul>
-            <li><strong>Image generation</strong> · Built platform presets and asset inputs in Next.js, then integrated an image generation API with platform and style prompts.</li>
-            </ul>
-          </li>
+          <li><strong>Situation</strong> · Creators needed thumbnails in different sizes for different platforms.</li>
+          <li><strong>Task</strong> · Build a tool that turns uploaded assets into platform-ready thumbnails.</li>
+          <li><strong>Action</strong> · Built platform presets and asset inputs in Next.js and integrated an image generation API.</li>
+          <li><strong>Result</strong> · Shipped multi-platform preview and download, with batch generation and high-resolution export for subscribers.</li>
         </ul>
       </article>
     </section>
@@ -164,7 +157,7 @@ Yes. Start with an existing resume or project notes and prioritize entries with 
 
 ### How do I use STAR on a one-page resume?
 
-Compress the situation and task into a short clause, then describe the action you took and the verified result. Attribute team outcomes. A shipped capability, documented adoption, or validated finding can also show impact.
+Write four brief lines per project: Situation, Task, Action, and Result. Attribute team outcomes. A shipped capability, documented adoption, or validated finding can also show impact.
 
 ### How do I export a resume to PDF?
 

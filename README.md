@@ -42,7 +42,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 - **A · 行动**：你具体做了什么？关键方案是怎么实现的？
 - **R · 结果**：最后交付了什么？有哪些上线数据、使用反馈或验证结果？
 
-正文可以沿用「背景与目标 → 指标与效果 → 我的职责」，也可以把四个要素压进一两条简历要点。没有量化指标时，用实际交付、采纳情况或已完成的验证来写结果。有待确认的事实放在稿外。
+正文里的每个项目都按「情境、任务、行动、结果」分四行写，一页简历也采用这个顺序。没有量化指标时，用实际交付、采纳情况或已完成的验证来写结果。有待确认的事实放在稿外。
 
 ## 可以这样用
 
@@ -124,14 +124,10 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
       <article class="resume-project">
         <h4>EC-Monica 电商产运 Agent</h4>
         <ul>
-          <li><strong>背景</strong> · 产品、运营和研发需要查数、写报告和分析业务波动。作为项目负责人，我从零搭建了电商产运 Agent。</li>
-          <li><strong>指标与效果</strong> · 上线后月均调用 600+ 次。单次分析报告原先人工编写需 1–2 小时，使用 Agent 生成需 5–15 分钟。</li>
-          <li><strong>我的职责</strong>
-            <ul>
-            <li><strong>Agent 工作流</strong> · 根据用户意图选择工具或直接生成，逐轮整理查询结论并汇总成报告。</li>
-            <li><strong>上下文工程</strong> · 将同比、环比数据和业务范文加入模型上下文，用摘要和滑动窗口保留前轮结论。</li>
-            </ul>
-          </li>
+          <li><strong>情境</strong> · 电商团队需要查数、分析指标波动并撰写报告。</li>
+          <li><strong>任务</strong> · 从零搭建并上线电商产运 Agent。</li>
+          <li><strong>行动</strong> · 实现意图路由与工具调用，计算同比和环比并汇总报告。</li>
+          <li><strong>结果</strong> · 月均调用 600+ 次。单次报告人工编写需 1–2 小时，使用 Agent 生成需 5–15 分钟。</li>
         </ul>
       </article>
     </section>
@@ -141,13 +137,10 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
       <article class="resume-project">
         <h4>AI 封面图生成工具</h4>
         <ul>
-          <li><strong>背景</strong> · 为多平台创作者搭建封面图工具，让他们提交素材后生成符合平台尺寸的封面。</li>
-          <li><strong>指标与效果</strong> · 已支持多平台封面预览和下载，订阅用户可以批量生成并导出高清图。</li>
-          <li><strong>我的职责</strong>
-            <ul>
-            <li><strong>生成流程</strong> · 用 Next.js 实现平台尺寸预设和素材输入，按平台与风格组织提示词并调用图像生成 API。</li>
-            </ul>
-          </li>
+          <li><strong>情境</strong> · 多平台创作者需要符合各平台尺寸的封面。</li>
+          <li><strong>任务</strong> · 搭建可上传素材并生成封面的工具。</li>
+          <li><strong>行动</strong> · 用 Next.js 实现尺寸预设和素材输入，接入图像生成 API。</li>
+          <li><strong>结果</strong> · 已支持多平台封面预览和下载，订阅用户可批量生成和导出高清图。</li>
         </ul>
       </article>
     </section>
@@ -166,7 +159,7 @@ mkdir -p .grok/skills && cp -R OfferHunter/skills/resume-engineering .grok/skill
 
 ### STAR 法则怎么用在一页简历里？
 
-把情境和任务压成一句话，用动作写清个人贡献，再接上能核对的结果。团队数据写清归属。没有量化数据时，可以写已上线能力、实际采纳或验证发现。
+每个项目写四行，每行只留最需要读者知道的信息。团队数据写清归属。没有量化数据时，可以写已上线能力、实际采纳或验证发现。
 
 ### HTML 或 LaTeX 简历如何导出 PDF？
 
